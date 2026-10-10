@@ -1,0 +1,85 @@
+# Paste-ready workflow for the GitHub web UI.
+#
+# WHY THIS EXISTS
+#   GitHub rejects any create/update under .github/workflows/ unless the pushing
+#   token carries the `workflow` scope. The token on the authoring machine has only
+#   gist, read:org, repo, so `git push` of the full workflow is refused:
+#
+#     ! [remote rejected] main -> main (refusing to allow an OAuth App to create
+#       or update workflow `.github/workflows/ios-core-build.yml` without
+#       `workflow` scope)
+#
+#   Creating the file through the GitHub web UI uses your browser session, not a
+#   token, so it needs no scope at all. This is that file, reduced to the minimum
+#   that reaches the milestone.
+#
+# WHAT IT DOES
+#   All the build and verification logic already lives in scripts/ci-ios-build.sh,
+#   which IS on the remote. So this file only has to pin CMake and call it.
+#
+# HOW TO USE
+#   1. Open https://github.com/Jpatt1990/deez-retro/new/main/.github/workflows
+#   2. Name the file: ios-core-build.yml
+#   3. Paste everything below the `---8<---` line
+#   4. Commit. GitHub will register the workflow within a few seconds and start it.
+#
+#   The full multi-job version (core + simulator + app + engine link) is in the
+#   local repository at .github/workflows/ios-core-build.yml and can be pushed
+#   later once the `workflow` scope is granted.
+---8<---
+name: iOS core build
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+env:
+  FLYCAST_SHA: ed953fcbfdd1b8a7521d2966b13cc700c7e2d233
+  DEEZRETRO_WORK: ${{ github.workspace }}/build
+  # CMake is pinned to 3.x deliberately: CMake 4 removed compatibility with
+  # cmake_minimum_required(VERSION < 3.5), and Flycast's bundled
+  # libchdr/deps/zlib-1.3.1 declares 2.4.4...3.15.0. Reproduced locally.
+  CMAKE_VERSION: 3.31.6
+
+jobs:
+  core:
+    name: Flycast core -> arm64-apple-ios
+    runs-on: macos-15
+    timeout-minutes: 120
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Pin CMake
+        run: |
+          set -euo pipefail
+          url="https://github.com/Kitware/CMake/releases/download/v${CMAKE_VERSION}/cmake-${CMAKE_VERSION}-macos-universal.tar.gz"
+          curl -fsSL "$url" -o /tmp/cmake.tar.gz
+          mkdir -p "$HOME/toolchain"
+          tar -xzf /tmp/cmake.tar.gz -C "$HOME/toolchain"
+          echo "$HOME/toolchain/cmake-${CMAKE_VERSION}-macos-universal/CMake.app/Contents/bin" >> "$GITHUB_PATH"
+
+      - name: Toolchain
+        run: |
+          set -x
+          sw_vers
+          xcodebuild -version
+          cmake --version
+
+      - name: Build and verify the core library
+        run: mkdir -p "$DEEZRETRO_WORK" && bash scripts/ci-ios-build.sh core
+
+      - name: Upload artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: flycast-ios-core
+          path: |
+            build/configure.log
+            build/build.log
+            build/flycast-ios/**/libflycast.a
+          if-no-files-found: warn
+          retention-days: 30
