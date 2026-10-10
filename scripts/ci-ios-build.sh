@@ -33,6 +33,50 @@ log()  { printf '\n=== %s ===\n' "$*"; }
 fail() { printf '\n!!! %s\n' "$*" >&2; exit 1; }
 
 # ---------------------------------------------------------------------------
+# CMake must be 3.x, and this is not cosmetic.
+#
+# CMake 4 removed compatibility with cmake_minimum_required(VERSION < 3.5), and
+# Flycast's bundled core/deps/libchdr/deps/zlib-1.3.1/CMakeLists.txt declares
+# `cmake_minimum_required(VERSION 2.4.4...3.15.0)`. That dependency is added
+# whenever WITH_SYSTEM_ZLIB is not already set (Flycast CMakeLists.txt:583).
+# GitHub's macOS runners ship CMake 4.x, so the configure aborts.
+#
+# Reproduced locally: CMake 4.4.4 failed, CMake 3.31.6 succeeded.
+# ---------------------------------------------------------------------------
+CMAKE_VERSION="${CMAKE_VERSION:-3.31.6}"
+
+ensure_cmake() {
+  local v=""
+  if command -v cmake >/dev/null 2>&1; then
+    v="$(cmake --version | head -1 | sed -E 's/[^0-9]*([0-9]+\.[0-9]+).*/\1/')"
+  fi
+  case "$v" in
+    3.*)
+      echo "cmake $v from PATH is acceptable (3.x)"
+      return 0
+      ;;
+    "")
+      echo "no cmake on PATH; installing $CMAKE_VERSION"
+      ;;
+    *)
+      echo "cmake $v is too new (CMake 4 cannot configure this dependency tree); installing $CMAKE_VERSION"
+      ;;
+  esac
+
+  local dir="$HOME/toolchain/cmake-${CMAKE_VERSION}-macos-universal/CMake.app/Contents/bin"
+  if [ ! -x "$dir/cmake" ]; then
+    local url="https://github.com/Kitware/CMake/releases/download/v${CMAKE_VERSION}/cmake-${CMAKE_VERSION}-macos-universal.tar.gz"
+    echo "downloading $url"
+    mkdir -p "$HOME/toolchain"
+    curl -fsSL "$url" -o /tmp/cmake-pin.tar.gz
+    tar -xzf /tmp/cmake-pin.tar.gz -C "$HOME/toolchain"
+  fi
+  [ -x "$dir/cmake" ] || fail "pinned cmake not found at $dir"
+  export PATH="$dir:$PATH"
+  echo "using $(cmake --version | head -1) from $dir"
+}
+
+# ---------------------------------------------------------------------------
 # Shared: fetch the pinned engine and apply our patches.
 # ---------------------------------------------------------------------------
 fetch_engine() {
@@ -88,6 +132,7 @@ EOF
 # core: the ARM64 milestone.
 # ---------------------------------------------------------------------------
 cmd_core() {
+  ensure_cmake
   [ "${SKIP_FETCH:-0}" = "1" ] || fetch_engine
 
   local bld="$WORK/flycast-ios"
@@ -156,6 +201,7 @@ cmd_verify() {
 # sim: simulator core. Catches arch-conditional breakage the device build hides.
 # ---------------------------------------------------------------------------
 cmd_sim() {
+  ensure_cmake
   [ "${SKIP_FETCH:-0}" = "1" ] || fetch_engine
   local bld="$WORK/flycast-sim"
   log "configure: arm64 iOS simulator, interpreter-only"
