@@ -1,0 +1,376 @@
+# ios-core-build.yml
+#
+# Route B: produce REAL arm64 iPadOS build logs and artifacts without owning a Mac.
+#
+# WHY THIS EXISTS
+#   Deez Retro Phase 2 was authored on a Windows host with no Apple toolchain, so
+#   nothing could be compiled for iPadOS. A GitHub-hosted macOS runner has full
+#   Xcode, which makes a genuine arm64-apple-ios build obtainable in minutes.
+#
+# WHAT IT PROVES
+#   job `core`  Flycast's core configures, compiles and archives for
+#               arm64-apple-ios at the pinned SHA, in the interpreter-only
+#               configuration, as libflycast.a
+#   job `app`   the SwiftUI app compiles and links for iOS Simulator and for
+#               arm64 device (unsigned)
+#   job `link`  the core library actually links into the app
+#
+# WHAT IT DOES NOT PROVE
+#   Nothing about runtime behaviour. A green run is NOT evidence that the
+#   emulator boots, renders, produces audio, or performs acceptably. Only a
+#   physical iPad can establish that. See docs/PHASE2-BUILD-REPORT.md.
+
+name: iOS core build
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/**'
+      - 'patches/**'
+      - 'project.yml'
+      - 'App/**'
+      - 'Bridge/**'
+      - 'JIT/**'
+      - 'Tests/**'
+      - '.github/workflows/ios-core-build.yml'
+  pull_request:
+    paths:
+      - 'scripts/**'
+      - 'patches/**'
+      - 'project.yml'
+      - 'App/**'
+      - 'Bridge/**'
+      - 'JIT/**'
+      - 'Tests/**'
+
+env:
+  FLYCAST_REPO: https://github.com/flyinghead/flycast.git
+  FLYCAST_SHA: ed953fcbfdd1b8a7521d2966b13cc700c7e2d233
+  # CMake is PINNED TO 3.x ON PURPOSE - do not "simplify" this to `brew install cmake`.
+  #
+  # GitHub's macOS runners ship CMake 4.x. CMake 4 removed compatibility with
+  # cmake_minimum_required(VERSION < 3.5), and Flycast's bundled
+  # core/deps/libchdr/deps/zlib-1.3.1/CMakeLists.txt declares
+  # `cmake_minimum_required(VERSION 2.4.4...3.15.0)`. That dependency is added
+  # whenever WITH_SYSTEM_ZLIB is not already set (Flycast CMakeLists.txt:583-585).
+  # CMake 4 therefore aborts the configure.
+  #
+  # This was reproduced locally: CMake 4.4.4 failed, CMake 3.31.6 succeeded.
+  CMAKE_VERSION: 3.31.6
+
+jobs:
+  # ===========================================================================
+  # Job 1 - THE MILESTONE. arm64 iPadOS static library.
+  # ===========================================================================
+  core:
+    name: Flycast core -> arm64-apple-ios
+    runs-on: macos-15
+    timeout-minutes: 150
+    defaults:
+      run:
+        shell: bash
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Pin CMake ${{ env.CMAKE_VERSION }}
+        run: |
+          set -euo pipefail
+          url="https://github.com/Kitware/CMake/releases/download/v${CMAKE_VERSION}/cmake-${CMAKE_VERSION}-macos-universal.tar.gz"
+          curl -fsSL "$url" -o /tmp/cmake.tar.gz
+          mkdir -p "$HOME/toolchain"
+          tar -xzf /tmp/cmake.tar.gz -C "$HOME/toolchain"
+          echo "$HOME/toolchain/cmake-${CMAKE_VERSION}-macos-universal/CMake.app/Contents/bin" >> "$GITHUB_PATH"
+
+      - name: Toolchain versions
+        run: |
+          set -x
+          sw_vers
+          xcodebuild -version
+          xcode-select -p
+          cmake --version
+          sysctl -n hw.ncpu
+
+      - name: Fetch pinned Flycast and submodules
+        run: |
+          set -euo pipefail
+          mkdir -p engines
+          git clone "$FLYCAST_REPO" engines/flycast
+          git -C engines/flycast checkout --detach "$FLYCAST_SHA"
+          git -C engines/flycast submodule update --init --recursive --depth 1
+          echo "Flycast at $(git -C engines/flycast rev-parse HEAD)"
+
+      - name: Apply Deez Retro patches
+        run: |
+          set -euo pipefail
+          shopt -s nullglob
+          for p in patches/*.patch; do
+            echo "applying $p"
+            git -C engines/flycast apply --verbose "$p"
+          done
+          grep -q DEEZRETRO_CORE_LIBRARY engines/flycast/CMakeLists.txt
+          echo "patch verified present in CMakeLists.txt"
+
+      - name: Configure (arm64 iPadOS, interpreter-only, core library)
+        run: |
+          set -euo pipefail
+          mkdir -p build
+          cmake -S engines/flycast -B build/flycast-ios -G Xcode \
+            -DCMAKE_SYSTEM_NAME=iOS \
+            -DCMAKE_OSX_SYSROOT=iphoneos \
+            -DCMAKE_OSX_ARCHITECTURES=arm64 \
+            -DCMAKE_OSX_DEPLOYMENT_TARGET=17.0 \
+            -DCMAKE_BUILD_TYPE=Release \
+            -DCMAKE_XCODE_ATTRIBUTE_CODE_SIGNING_ALLOWED=NO \
+            -DCMAKE_XCODE_ATTRIBUTE_CODE_SIGN_IDENTITY="" \
+            -DDEEZRETRO_CORE_LIBRARY=ON \
+            -DDEEZRETRO_NO_REC=ON \
+            -DUSE_VULKAN=OFF \
+            -DUSE_DX9=OFF -DUSE_DX11=OFF \
+            -DUSE_BREAKPAD=OFF -DUSE_DISCORD=OFF -DUSE_LUA=OFF -DUSE_OPENMP=OFF \
+            -DUSE_HOST_LIBZIP=OFF -DUSE_HOST_LIBCHDR=OFF -DUSE_LIBCDIO=OFF \
+            2>&1 | tee build/configure.log
+
+      - name: Build core library (the ARM64 gate)
+        id: build
+        run: |
+          set -o pipefail
+          cmake --build build/flycast-ios --config Release --target flycast \
+            -j "$(sysctl -n hw.ncpu)" 2>&1 | tee build/build.log
+          echo "core build exited 0"
+
+      - name: Verify architecture and required symbols
+        if: steps.build.outcome == 'success'
+        run: |
+          set -euo pipefail
+          LIB="$(find build/flycast-ios -name 'libflycast.a' -print -quit)"
+          if [ -z "$LIB" ]; then
+            echo "::error::no libflycast.a produced"
+            find build/flycast-ios -name '*.a' -o -name '*.app' | head -20
+            exit 1
+          fi
+          echo "library: $LIB"
+          echo "--- architecture ---"
+          lipo -info "$LIB"
+          file "$LIB"
+          lipo -info "$LIB" | grep -q 'arm64' || { echo "::error::not arm64"; exit 1; }
+          echo "--- object members ---"
+          ar t "$LIB" | wc -l
+          echo "--- required symbols (called by Bridge/DeezRetroCore.mm) ---"
+          missing=0
+          for sym in flycast_init flycast_term mainui_init mainui_rend_frame \
+                     dc_savestate dc_loadstate dc_savestateAllowed; do
+            if nm "$LIB" 2>/dev/null | grep -qE "[[:space:]]_?${sym}\$"; then
+              echo "OK      $sym"
+            else
+              echo "::warning title=missing symbol::$sym absent from libflycast.a"
+              missing=$((missing+1))
+            fi
+          done
+          echo "missing=$missing"
+
+      - name: Confirm interpreter-only really took effect
+        if: steps.build.outcome == 'success'
+        run: |
+          set -euo pipefail
+          # core/build.h maps TARGET_NO_REC -> FEAT_SHREC/AREC/DSPREC == DYNAREC_NONE.
+          # With all three off, core/rec-ARM64/rec_arm64.cpp and the AICA
+          # recompilers compile to empty translation units, so recompiler symbols
+          # must be ABSENT and the interpreter must be present.
+          # This is the property that removes the iPadOS JIT requirement.
+          LIB="$(find build/flycast-ios -name 'libflycast.a' -print -quit)"
+          if nm "$LIB" 2>/dev/null | grep -qiE 'Get_Sh4Recompiler|rec_arm64|Sh4Recompiler'; then
+            echo "::error::recompiler symbols present - TARGET_NO_REC did not take effect"
+            exit 1
+          fi
+          echo "no recompiler symbols: interpreter-only configuration confirmed"
+          if nm "$LIB" 2>/dev/null | grep -qiE 'Sh4Interpreter|Sh4Interp'; then
+            echo "interpreter symbols present"
+          else
+            echo "::warning::no interpreter symbols matched; check the symbol filter"
+          fi
+
+      - name: Also build the simulator core (catches arch-conditional breakage)
+        continue-on-error: true
+        run: |
+          set -o pipefail
+          cmake -S engines/flycast -B build/flycast-sim -G Xcode \
+            -DCMAKE_SYSTEM_NAME=iOS \
+            -DCMAKE_OSX_SYSROOT=iphonesimulator \
+            -DCMAKE_OSX_ARCHITECTURES=arm64 \
+            -DCMAKE_OSX_DEPLOYMENT_TARGET=17.0 \
+            -DCMAKE_BUILD_TYPE=Release \
+            -DCMAKE_XCODE_ATTRIBUTE_CODE_SIGNING_ALLOWED=NO \
+            -DDEEZRETRO_CORE_LIBRARY=ON -DDEEZRETRO_NO_REC=ON \
+            -DUSE_VULKAN=OFF -DUSE_DX9=OFF -DUSE_DX11=OFF \
+            -DUSE_BREAKPAD=OFF -DUSE_DISCORD=OFF -DUSE_LUA=OFF -DUSE_OPENMP=OFF \
+            -DUSE_HOST_LIBZIP=OFF -DUSE_HOST_LIBCHDR=OFF -DUSE_LIBCDIO=OFF \
+            2>&1 | tee build/configure-sim.log
+          cmake --build build/flycast-sim --config Release --target flycast \
+            -j "$(sysctl -n hw.ncpu)" 2>&1 | tee build/build-sim.log
+
+      - name: Upload artifacts and logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: flycast-ios-core
+          path: |
+            build/configure.log
+            build/build.log
+            build/configure-sim.log
+            build/build-sim.log
+            build/flycast-ios/**/libflycast.a
+            build/flycast-sim/**/libflycast.a
+          if-no-files-found: warn
+          retention-days: 30
+
+  # ===========================================================================
+  # Job 2 - the SwiftUI app compiles and links for iOS (no engine yet).
+  # Kept independent so a core failure cannot hide an app-side failure.
+  # DEEZRETRO_HAVE_FLYCAST=0 means the app honestly reports "engine not linked".
+  # ===========================================================================
+  app:
+    name: DeezRetro app (simulator + arm64 device, unsigned)
+    runs-on: macos-15
+    timeout-minutes: 60
+    defaults:
+      run:
+        shell: bash
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch engines so the bridge header paths resolve
+        run: |
+          set -euo pipefail
+          bash scripts/fetch-engines.sh
+
+      - name: Install XcodeGen
+        run: brew install xcodegen
+
+      - name: Generate the Xcode project
+        run: |
+          set -euo pipefail
+          xcodegen generate
+          xcodebuild -project DeezRetro.xcodeproj -list
+
+      - name: Build for iOS Simulator
+        run: |
+          set -o pipefail
+          mkdir -p build
+          xcodebuild \
+            -project DeezRetro.xcodeproj \
+            -scheme DeezRetro \
+            -sdk iphonesimulator \
+            -configuration Debug \
+            -destination 'generic/platform=iOS Simulator' \
+            CODE_SIGNING_ALLOWED=NO \
+            build 2>&1 | tee build/app-simulator.log
+
+      - name: Build for arm64 device (unsigned)
+        run: |
+          set -o pipefail
+          xcodebuild \
+            -project DeezRetro.xcodeproj \
+            -scheme DeezRetro \
+            -sdk iphoneos \
+            -configuration Release \
+            -destination 'generic/platform=iOS' \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            build 2>&1 | tee build/app-device.log
+
+      - name: Verify the app binary architecture
+        run: |
+          set -euo pipefail
+          APP="$(find ~/Library/Developer/Xcode/DerivedData -name 'DeezRetro.app' -path '*Release-iphoneos*' -print -quit)"
+          if [ -z "$APP" ]; then
+            echo "::warning::device .app not found in DerivedData; skipping arch check"
+            exit 0
+          fi
+          echo "app: $APP"
+          lipo -info "$APP/DeezRetro"
+          lipo -info "$APP/DeezRetro" | grep -q arm64
+
+      - name: Upload app logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: deezretro-app-logs
+          path: build/app-*.log
+          if-no-files-found: warn
+
+  # ===========================================================================
+  # Job 3 - link the engine into the app. This is BEYOND the stated milestone,
+  # so it is allowed to fail without hiding job 1/2 results, but its logs are
+  # captured because they are the next thing to fix.
+  # ===========================================================================
+  link:
+    name: Link engine into app (beyond-milestone check)
+    runs-on: macos-15
+    timeout-minutes: 60
+    needs: [core, app]
+    continue-on-error: true
+    defaults:
+      run:
+        shell: bash
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch engines
+        run: |
+          set -euo pipefail
+          bash scripts/fetch-engines.sh
+
+      - name: Download the built core library
+        uses: actions/download-artifact@v4
+        with:
+          name: flycast-ios-core
+          path: build/core-artifact
+
+      - name: Locate libflycast.a
+        id: locate
+        run: |
+          set -euo pipefail
+          LIB="$(find build/core-artifact -name 'libflycast.a' -path '*iphoneos*' -print -quit)"
+          [ -n "$LIB" ] || LIB="$(find build/core-artifact -name 'libflycast.a' -print -quit)"
+          if [ -z "$LIB" ]; then
+            echo "::error::no libflycast.a in the artifact"
+            find build/core-artifact -type f | head -40
+            exit 1
+          fi
+          echo "lib=$LIB"
+          lipo -info "$LIB"
+          echo "lib_path=$LIB" >> "$GITHUB_OUTPUT"
+
+      - name: Install XcodeGen
+        run: brew install xcodegen
+
+      - name: Generate the Xcode project
+        run: xcodegen generate
+
+      - name: Build with the engine linked
+        run: |
+          set -o pipefail
+          mkdir -p build
+          xcodebuild \
+            -project DeezRetro.xcodeproj \
+            -scheme DeezRetro \
+            -sdk iphoneos \
+            -configuration Release \
+            -destination 'generic/platform=iOS' \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            GCC_PREPROCESSOR_DEFINITIONS='$(inherited) DEEZRETRO_HAVE_FLYCAST=1 GL_SILENCE_DEPRECATION=1 GLES_SILENCE_DEPRECATION=1' \
+            DEEZRETRO_CORE_LIB="$PWD/${{ steps.locate.outputs.lib_path }}" \
+            build 2>&1 | tee build/app-linked.log
+
+      - name: Upload link log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: deezretro-link-log
+          path: build/app-linked.log
+          if-no-files-found: warn

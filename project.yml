@@ -1,0 +1,141 @@
+# project.yml — XcodeGen specification for Deez Retro (iPadOS, Phase 2)
+#
+# Why XcodeGen and not a checked-in .xcodeproj:
+#   A .xcodeproj is a large, machine-generated pbxproj blob that is effectively
+#   unreviewable in git and painful to merge. Deez Retro pins two engines at
+#   exact SHAs and needs a reproducible way to regenerate the project. This file
+#   is the source of truth; `xcodegen generate` produces DeezRetro.xcodeproj.
+#
+# Regenerate with:
+#   brew install xcodegen
+#   cd deez-retro && xcodegen generate
+#
+# STATUS: UNVERIFIED. This spec has never been through XcodeGen on a Mac.
+# See docs/PHASE2-BUILD-REPORT.md.
+
+name: DeezRetro
+options:
+  bundleIdPrefix: com.deezretro
+  deploymentTarget:
+    iOS: "17.0"
+  createIntermediateGroups: true
+  groupSortPosition: top
+
+settings:
+  base:
+    # M4 iPad Pro is arm64-only. Never let a simulator/dynarec mismatch in by accident.
+    ARCHS: arm64
+    ONLY_ACTIVE_ARCH: NO
+    SWIFT_VERSION: "5.9"
+    # Flycast sets CMAKE_CXX_STANDARD 20 on its own target (CMakeLists.txt:284).
+    CLANG_CXX_LANGUAGE_STANDARD: "c++20"
+    CLANG_CXX_LIBRARY: libc++
+    # Engine build scripts write outside the build dir (cmake output, submodules).
+    ENABLE_USER_SCRIPT_SANDBOXING: NO
+    IPHONEOS_DEPLOYMENT_TARGET: "17.0"
+    CODE_SIGN_STYLE: Automatic
+    # GLES is deprecated but functional and is the only renderer Flycast has on
+    # iOS. Silence the deprecation noise rather than drowning the build log.
+    GCC_PREPROCESSOR_DEFINITIONS:
+      - "$(inherited)"
+      - GL_SILENCE_DEPRECATION=1
+      - GLES_SILENCE_DEPRECATION=1
+
+targets:
+  DeezRetro:
+    type: application
+    platform: iOS
+    sources:
+      - path: App
+      - path: JIT
+      - path: Bridge
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.deezretro.app
+        INFOPLIST_FILE: App/Info.plist
+        SWIFT_OBJC_BRIDGING_HEADER: Bridge/DeezRetro-Bridging-Header.h
+
+        HEADER_SEARCH_PATHS:
+          # Flycast's embeddable API (core/emulator.h) and the option header.
+          - $(SRCROOT)/engines/flycast/core
+          - $(SRCROOT)/engines/flycast/core/deps
+          # The reused header-only iOS input layer: ios_gamepad.h,
+          # ios_keyboard.h, ios_mouse.h. These are headers, so excluding the
+          # UIKit frontend from the *library build* does not remove them; the
+          # bridge just needs them on the include path. Used only under
+          # #if DEEZRETRO_HAVE_FLYCAST.
+          - $(SRCROOT)/engines/flycast/shell/apple/emulator-ios/emulator
+
+        # DEEZRETRO_HAVE_FLYCAST gates every C++ include and engine call in
+        # Bridge/. It starts at 0 so the app builds and launches, reporting
+        # "engine not linked", before the library is wired in. That is the
+        # honest state and it isolates Swift/ObjC problems from engine problems.
+        # Flip to 1 after scripts/build-flycast-ios.sh produces libflycast.a.
+        GCC_PREPROCESSOR_DEFINITIONS:
+          - "$(inherited)"
+          - DEEZRETRO_HAVE_FLYCAST=0
+          - GL_SILENCE_DEPRECATION=1
+          - GLES_SILENCE_DEPRECATION=1
+
+        TARGETED_DEVICE_FAMILY: "2"          # iPad only
+        SUPPORTS_MACCATALYST: NO             # Catalyst does not define IOS
+        SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD: NO
+
+        # Path to libflycast.a. Empty by default, so a local build links nothing
+        # and DEEZRETRO_HAVE_FLYCAST stays 0. CI overrides it on the command line:
+        #   xcodebuild ... DEEZRETRO_CORE_LIB=/abs/path/libflycast.a
+        DEEZRETRO_CORE_LIB: ""
+        OTHER_LDFLAGS:
+          - "$(inherited)"
+          - "$(DEEZRETRO_CORE_LIB)"
+
+    dependencies:
+      # UIKit/Foundation come in automatically for a SwiftUI app target, but the
+      # Objective-C++ bridge uses them directly, so link them explicitly.
+      - framework: UIKit.framework
+        embed: false
+      - framework: Foundation.framework
+        embed: false
+      # Flycast's iOS renderer: GLES3 via EAGLContext. Flycast has NO Metal
+      # backend, and iOS forces USE_VULKAN=OFF, so GLES is the only option.
+      - framework: OpenGLES.framework
+        embed: false
+      - framework: GLKit.framework
+        embed: false
+      # AudioToolbox/AVFoundation: Flycast's CoreAudio backend uses
+      # kAudioUnitSubType_RemoteIO on iOS (core/audio/audiobackend_coreaudio.cpp:89),
+      # and the app configures AVAudioSession.
+      - framework: AudioToolbox.framework
+        embed: false
+      - framework: AVFoundation.framework
+        embed: false
+      # DualSense and other controllers, via the reused ios_gamepad.h.
+      - framework: GameController.framework
+        embed: false
+      # SecTask* entitlement probes in JIT/JITAcquisition.swift.
+      - framework: Security.framework
+        embed: false
+      # Presentation layer only. The engine still renders GLES3.
+      - framework: Metal.framework
+        embed: false
+      - framework: MetalKit.framework
+        embed: false
+
+  DeezRetroTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources: [Tests]
+    dependencies:
+      - target: DeezRetro
+
+schemes:
+  DeezRetro:
+    build:
+      targets:
+        DeezRetro: all
+        DeezRetroTests: [test]
+    run:
+      config: Debug
+    test:
+      config: Debug
+      targets: [DeezRetroTests]

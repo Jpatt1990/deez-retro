@@ -1,0 +1,502 @@
+-- Selecting Windows SDK version 10.0.26100.0 to target Windows 10.0.26200.
+-- The C compiler identification is MSVC 19.44.35228.0
+-- The CXX compiler identification is MSVC 19.44.35228.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Target architecture: x86_64
+-- Found Git: C:/Users/jpatt/AppData/Local/hermes/git/cmd/git.exe (found version "2.54.0.windows.1")
+-- Architecture: AMD64
+CMake Deprecation Warning at core/deps/glm/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+CMake Deprecation Warning at core/deps/glm/CMakeLists.txt:2 (cmake_policy):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+-- Looking for clock_gettime
+-- Looking for clock_gettime - not found
+-- Looking for pthread_condattr_setclock
+-- Looking for pthread_condattr_setclock - not found
+-- Looking for pthread_setname_np
+-- Looking for pthread_setname_np - not found
+-- Looking for pthread_threadid_np
+-- Looking for pthread_threadid_np - not found
+-- Looking for eventfd
+-- Looking for eventfd - not found
+-- Looking for pipe2
+-- Looking for pipe2 - not found
+-- Looking for syslog
+-- Looking for syslog - not found
+-- Looking for include file asm/types.h
+-- Looking for include file asm/types.h - not found
+-- Looking for include file string.h
+-- Looking for include file string.h - found
+-- Looking for include file sys/time.h
+-- Looking for include file sys/time.h - not found
+-- Looking for timerfd_create
+-- Looking for timerfd_create - not found
+-- Looking for nfds_t
+-- Looking for nfds_t - not found
+-- Performing Test HAVE_STRUCT_TIMESPEC
+-- Performing Test HAVE_STRUCT_TIMESPEC - Success
+-- Skipping include of cmake-libusb
+-- Could NOT find PkgConfig (missing: PKG_CONFIG_EXECUTABLE) 
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - not found
+-- Performing Test CHECK_CPU_ARCHITECTURE_X86
+-- Performing Test CHECK_CPU_ARCHITECTURE_X86 - Failed
+-- Performing Test CHECK_CPU_ARCHITECTURE_X64
+-- Performing Test CHECK_CPU_ARCHITECTURE_X64 - Success
+-- Performing Test CHECK_CPU_ARCHITECTURE_ARM32
+-- Performing Test CHECK_CPU_ARCHITECTURE_ARM32 - Failed
+-- Performing Test CHECK_CPU_ARCHITECTURE_ARM64
+-- Performing Test CHECK_CPU_ARCHITECTURE_ARM64 - Failed
+-- Performing Test CHECK_CPU_ARCHITECTURE_ARM64EC
+-- Performing Test CHECK_CPU_ARCHITECTURE_ARM64EC - Failed
+-- Performing Test CHECK_CPU_ARCHITECTURE_LOONGARCH64
+-- Performing Test CHECK_CPU_ARCHITECTURE_LOONGARCH64 - Failed
+-- Looking for immintrin.h
+-- Looking for immintrin.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Performing Test HAVE_WIN32_CC
+-- Performing Test HAVE_WIN32_CC - Success
+-- Looking for d3d9.h
+-- Looking for d3d9.h - found
+-- Looking for d3d11_1.h
+-- Looking for d3d11_1.h - found
+-- Performing Test HAVE_D3D12_H
+-- Performing Test HAVE_D3D12_H - Success
+-- Looking for ddraw.h
+-- Looking for ddraw.h - found
+-- Looking for dsound.h
+-- Looking for dsound.h - found
+-- Looking for dinput.h
+-- Looking for dinput.h - found
+-- Looking for dxgi.h
+-- Looking for dxgi.h - found
+-- Performing Test HAVE_XINPUT_H
+-- Performing Test HAVE_XINPUT_H - Success
+-- Performing Test HAVE_WINDOWS_GAMING_INPUT_H
+-- Performing Test HAVE_WINDOWS_GAMING_INPUT_H - Success
+-- Looking for tpcshrd.h
+-- Looking for tpcshrd.h - found
+-- Looking for roapi.h
+-- Looking for roapi.h - found
+-- Looking for mmdeviceapi.h
+-- Looking for mmdeviceapi.h - found
+-- Looking for audioclient.h
+-- Looking for audioclient.h - found
+-- Looking for sensorsapi.h
+-- Looking for sensorsapi.h - found
+-- Looking for shellscalingapi.h
+-- Looking for shellscalingapi.h - found
+CMake Deprecation Warning at core/deps/SDL/CMakeLists.txt:3300 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+-- 
+-- SDL2 was configured with the following options:
+-- 
+-- Platform: Windows-10.0.26200
+-- 64-bit:   TRUE
+-- Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe
+-- Revision: SDL-2.33.0-g00d4f1c
+-- 
+-- Subsystems:
+--   Atomic:	ON
+--   Audio:	ON
+--   Video:	ON
+--   Render:	ON
+--   Events:	ON
+--   Joystick:	ON
+--   Haptic:	ON
+--   Hidapi:	ON
+--   Power:	ON
+--   Threads:	ON
+--   Timers:	ON
+--   File:	ON
+--   Loadso:	ON
+--   CPUinfo:	ON
+--   Filesystem:	ON
+--   Sensor:	ON
+--   Locale:	ON
+--   Misc:	ON
+-- 
+-- Options:
+--   SDL2_DISABLE_INSTALL        (Wanted: ON): OFF
+--   SDL2_DISABLE_SDL2MAIN       (Wanted: OFF): OFF
+--   SDL2_DISABLE_UNINSTALL      (Wanted: OFF): OFF
+--   SDL_3DNOW                   (Wanted: OFF): OFF
+--   SDL_ALSA                    (Wanted: OFF): OFF
+--   SDL_ALSA_SHARED             (Wanted: OFF): OFF
+--   SDL_ALTIVEC                 (Wanted: ON): OFF
+--   SDL_ARMNEON                 (Wanted: OFF): OFF
+--   SDL_ARMSIMD                 (Wanted: OFF): OFF
+--   SDL_ARTS                    (Wanted: OFF): OFF
+--   SDL_ARTS_SHARED             (Wanted: OFF): OFF
+--   SDL_ASAN                    (Wanted: OFF): OFF
+--   SDL_ASSEMBLY                (Wanted: ON): OFF
+--   SDL_ASSERTIONS              (Wanted: auto): auto
+--   SDL_BACKGROUNDING_SIGNAL    (Wanted: OFF): OFF
+--   SDL_CCACHE                  (Wanted: ON): OFF
+--   SDL_CLOCK_GETTIME           (Wanted: OFF): OFF
+--   SDL_COCOA                   (Wanted: OFF): OFF
+--   SDL_DBUS                    (Wanted: OFF): OFF
+--   SDL_DIRECTFB                (Wanted: OFF): OFF
+--   SDL_DIRECTFB_SHARED         (Wanted: OFF): OFF
+--   SDL_DIRECTX                 (Wanted: ON): ON
+--   SDL_DISKAUDIO               (Wanted: ON): ON
+--   SDL_DUMMYAUDIO              (Wanted: ON): ON
+--   SDL_DUMMYVIDEO              (Wanted: ON): ON
+--   SDL_ESD                     (Wanted: OFF): OFF
+--   SDL_ESD_SHARED              (Wanted: OFF): OFF
+--   SDL_FOREGROUNDING_SIGNAL    (Wanted: OFF): OFF
+--   SDL_FUSIONSOUND             (Wanted: OFF): OFF
+--   SDL_FUSIONSOUND_SHARED      (Wanted: OFF): OFF
+--   SDL_GCC_ATOMICS             (Wanted: OFF): OFF
+--   SDL_HIDAPI                  (Wanted: ON): ON
+--   SDL_HIDAPI_JOYSTICK         (Wanted: ON): ON
+--   SDL_HIDAPI_LIBUSB           (Wanted: OFF): OFF
+--   SDL_IBUS                    (Wanted: OFF): OFF
+--   SDL_INSTALL_TESTS           (Wanted: OFF): OFF
+--   SDL_JACK                    (Wanted: OFF): OFF
+--   SDL_JACK_SHARED             (Wanted: OFF): OFF
+--   SDL_KMSDRM                  (Wanted: OFF): OFF
+--   SDL_KMSDRM_SHARED           (Wanted: OFF): OFF
+--   SDL_LASX                    (Wanted: OFF): OFF
+--   SDL_LIBC                    (Wanted: OFF): OFF
+--   SDL_LIBICONV                (Wanted: OFF): OFF
+--   SDL_LIBSAMPLERATE           (Wanted: OFF): OFF
+--   SDL_LIBSAMPLERATE_SHARED    (Wanted: OFF): OFF
+--   SDL_LIBUDEV                 (Wanted: ON): OFF
+--   SDL_LSX                     (Wanted: OFF): OFF
+--   SDL_METAL                   (Wanted: OFF): OFF
+--   SDL_MMX                     (Wanted: ON): OFF
+--   SDL_NAS                     (Wanted: OFF): OFF
+--   SDL_NAS_SHARED              (Wanted: OFF): OFF
+--   SDL_OFFSCREEN               (Wanted: ON): ON
+--   SDL_OPENGL                  (Wanted: ON): ON
+--   SDL_OPENGLES                (Wanted: ON): ON
+--   SDL_OSS                     (Wanted: OFF): OFF
+--   SDL_PIPEWIRE                (Wanted: OFF): OFF
+--   SDL_PIPEWIRE_SHARED         (Wanted: OFF): OFF
+--   SDL_PTHREADS                (Wanted: OFF): OFF
+--   SDL_PTHREADS_SEM            (Wanted: OFF): OFF
+--   SDL_PULSEAUDIO              (Wanted: OFF): OFF
+--   SDL_PULSEAUDIO_SHARED       (Wanted: OFF): OFF
+--   SDL_RENDER_D3D              (Wanted: ON): ON
+--   SDL_RENDER_METAL            (Wanted: OFF): OFF
+--   SDL_RPATH                   (Wanted: OFF): OFF
+--   SDL_RPI                     (Wanted: OFF): OFF
+--   SDL_SNDIO                   (Wanted: OFF): OFF
+--   SDL_SNDIO_SHARED            (Wanted: OFF): OFF
+--   SDL_SSE                     (Wanted: ON): ON
+--   SDL_SSE2                    (Wanted: ON): ON
+--   SDL_SSE3                    (Wanted: ON): ON
+--   SDL_SSEMATH                 (Wanted: ON): OFF
+--   SDL_STATIC_PIC              (Wanted: OFF): OFF
+--   SDL_SYSTEM_ICONV            (Wanted: OFF): OFF
+--   SDL_TESTS                   (Wanted: OFF): OFF
+--   SDL_VENDOR_INFO             (Wanted: ): OFF
+--   SDL_VIRTUAL_JOYSTICK        (Wanted: ON): ON
+--   SDL_VIVANTE                 (Wanted: OFF): OFF
+--   SDL_VULKAN                  (Wanted: ON): ON
+--   SDL_WASAPI                  (Wanted: ON): ON
+--   SDL_WAYLAND                 (Wanted: OFF): OFF
+--   SDL_WAYLAND_LIBDECOR        (Wanted: OFF): OFF
+--   SDL_WAYLAND_LIBDECOR_SHARED (Wanted: OFF): OFF
+--   SDL_WAYLAND_QT_TOUCH        (Wanted: OFF): OFF
+--   SDL_WAYLAND_SHARED          (Wanted: OFF): OFF
+--   SDL_X11                     (Wanted: OFF): OFF
+--   SDL_X11_SHARED              (Wanted: OFF): OFF
+--   SDL_X11_XCURSOR             (Wanted: OFF): OFF
+--   SDL_X11_XDBE                (Wanted: OFF): OFF
+--   SDL_X11_XFIXES              (Wanted: OFF): OFF
+--   SDL_X11_XINPUT              (Wanted: OFF): OFF
+--   SDL_X11_XRANDR              (Wanted: OFF): OFF
+--   SDL_X11_XSCRNSAVER          (Wanted: OFF): OFF
+--   SDL_X11_XSHAPE              (Wanted: OFF): OFF
+--   SDL_XINPUT                  (Wanted: ON): ON
+-- 
+--  CFLAGS:        /IC:\Users\jpatt\deez-retro-work\upstream\flycast\core\deps\dirent
+--  EXTRA_CFLAGS:  
+--  EXTRA_LDFLAGS:  -CETCOMPAT
+--  EXTRA_LIBS:    kernel32;user32;gdi32;winmm;imm32;ole32;oleaut32;version;uuid;advapi32;setupapi;shell32;dinput8
+-- 
+--  Build Shared Library: OFF
+--  Build Static Library: ON
+--  Build Static Library with Position Independent Code: OFF
+-- 
+-- Could NOT find ZLIB (missing: ZLIB_LIBRARY ZLIB_INCLUDE_DIR) 
+-- Could NOT find PkgConfig (missing: PKG_CONFIG_EXECUTABLE) 
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of off64_t
+-- Check size of off64_t - failed
+-- Looking for fseeko
+-- Looking for fseeko - not found
+-- Looking for unistd.h
+-- Looking for unistd.h - not found
+CMake Deprecation Warning at core/deps/libchdr/deps/zstd-1.5.6/build/cmake/CMakeLists.txt:10 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+-- The ASM compiler identification is MSVC
+-- Found assembler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe
+-- ZSTD VERSION: 1.5.6
+-- Performing Test C_FLAG_MP
+-- Performing Test C_FLAG_MP - Success
+-- Performing Test CXX_FLAG_MP
+-- Performing Test CXX_FLAG_MP - Success
+-- Performing Test C_FLAG_D_UNICODE
+-- Performing Test C_FLAG_D_UNICODE - Success
+-- Performing Test CXX_FLAG_D_UNICODE
+-- Performing Test CXX_FLAG_D_UNICODE - Success
+-- Performing Test C_FLAG_DUNICODE
+-- Performing Test C_FLAG_DUNICODE - Success
+-- Performing Test CXX_FLAG_DUNICODE
+-- Performing Test CXX_FLAG_DUNICODE - Success
+-- CMAKE_INSTALL_PREFIX: C:/Program Files/flycast
+-- CMAKE_INSTALL_LIBDIR: lib
+-- ZSTD_LEGACY_SUPPORT not defined!
+-- ZSTD_MULTITHREAD_SUPPORT is enabled
+CMake Deprecation Warning at core/deps/libchdr/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+-- Looking for _M_AMD64
+-- Looking for _M_AMD64 - found
+-- The ASM_MASM compiler identification is MSVC
+-- Found assembler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/ml64.exe
+CMake Deprecation Warning at core/deps/nowide/CMakeLists.txt:16 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+-- Performing Test NOWIDE_HAS_LFS
+-- Performing Test NOWIDE_HAS_LFS - Success
+-- Performing Test NOWIDE_HAS_INIT_PRIORITY
+-- Performing Test NOWIDE_HAS_INIT_PRIORITY - Failed
+CMake Deprecation Warning at core/deps/libzip/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+-- Looking for _close
+-- Looking for _close - found
+-- Looking for _dup
+-- Looking for _dup - found
+-- Looking for _fdopen
+-- Looking for _fdopen - found
+-- Looking for _fileno
+-- Looking for _fileno - found
+-- Looking for _setmode
+-- Looking for _setmode - found
+-- Looking for _snprintf
+-- Looking for _snprintf - found
+-- Looking for _snprintf_s
+-- Looking for _snprintf_s - found
+-- Looking for _snwprintf_s
+-- Looking for _snwprintf_s - found
+-- Looking for _strdup
+-- Looking for _strdup - found
+-- Looking for _stricmp
+-- Looking for _stricmp - found
+-- Looking for _strtoi64
+-- Looking for _strtoi64 - found
+-- Looking for _strtoui64
+-- Looking for _strtoui64 - found
+-- Looking for _unlink
+-- Looking for _unlink - found
+-- Looking for arc4random
+-- Looking for arc4random - not found
+-- Looking for clonefile
+-- Looking for clonefile - not found
+-- Looking for explicit_bzero
+-- Looking for explicit_bzero - not found
+-- Looking for explicit_memset
+-- Looking for explicit_memset - not found
+-- Looking for fchmod
+-- Looking for fchmod - not found
+-- Looking for fileno
+-- Looking for fileno - found
+-- Looking for ftello
+-- Looking for ftello - not found
+-- Looking for getprogname
+-- Looking for getprogname - not found
+-- Looking for localtime_r
+-- Looking for localtime_r - not found
+-- Looking for localtime_s
+-- Looking for localtime_s - found
+-- Looking for memcpy_s
+-- Looking for memcpy_s - found
+-- Looking for random
+-- Looking for random - not found
+-- Looking for setmode
+-- Looking for setmode - found
+-- Looking for snprintf
+-- Looking for snprintf - found
+-- Looking for snprintf_s
+-- Looking for snprintf_s - not found
+-- Looking for strcasecmp
+-- Looking for strcasecmp - not found
+-- Looking for strdup
+-- Looking for strdup - found
+-- Looking for strerror_s
+-- Looking for strerror_s - found
+-- Looking for strerrorlen_s
+-- Looking for strerrorlen_s - not found
+-- Looking for stricmp
+-- Looking for stricmp - found
+-- Looking for strncpy_s
+-- Looking for strncpy_s - found
+-- Looking for strtoll
+-- Looking for strtoll - found
+-- Looking for strtoull
+-- Looking for strtoull - found
+-- Looking for 3 include files sys/types.h, ..., fts.h
+-- Looking for 3 include files sys/types.h, ..., fts.h - not found
+-- Looking for include file stdbool.h
+-- Looking for include file stdbool.h - found
+-- Looking for include file strings.h
+-- Looking for include file strings.h - not found
+-- Looking for include file unistd.h
+-- Looking for include file unistd.h - not found
+-- Looking for include file inttypes.h
+-- Looking for include file inttypes.h - found
+-- Looking for include file stdint.h
+-- Looking for include file stdint.h - found
+-- Looking for include file sys/types.h
+-- Looking for include file sys/types.h - found
+-- Check size of __int8
+-- Check size of __int8 - done
+-- Check size of int8_t
+-- Check size of int8_t - done
+-- Check size of uint8_t
+-- Check size of uint8_t - done
+-- Check size of __int16
+-- Check size of __int16 - done
+-- Check size of int16_t
+-- Check size of int16_t - done
+-- Check size of uint16_t
+-- Check size of uint16_t - done
+-- Check size of __int32
+-- Check size of __int32 - done
+-- Check size of int32_t
+-- Check size of int32_t - done
+-- Check size of uint32_t
+-- Check size of uint32_t - done
+-- Check size of __int64
+-- Check size of __int64 - done
+-- Check size of int64_t
+-- Check size of int64_t - done
+-- Check size of uint64_t
+-- Check size of uint64_t - done
+-- Check size of short
+-- Check size of short - done
+-- Check size of int
+-- Check size of int - done
+-- Check size of long
+-- Check size of long - done
+-- Check size of long long
+-- Check size of long long - done
+-- Check size of off_t
+-- Check size of off_t - done
+-- Check size of size_t
+-- Check size of size_t - done
+-- Performing Test HAVE_FICLONERANGE
+-- Performing Test HAVE_FICLONERANGE - Failed
+-- Performing Test HAVE_NULLABLE
+-- Performing Test HAVE_NULLABLE - Failed
+CMake Deprecation Warning at core/deps/libjuice/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - not found
+-- Found Threads: TRUE
+-- Could NOT find tinycmmc (missing: tinycmmc_DIR)
+-- tinycmmc module path: C:/Users/jpatt/deez-retro-work/upstream/flycast/core/deps/tinygettext/external/tinycmmc/modules/
+-- Project Name: flycast
+-- Project Version: -128-NOTFOUND
+-- WERROR disabled
+-- WARNINGS disabled
+CMake Deprecation Warning at core/deps/libelf/CMakeLists.txt:7 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+-- Could NOT find PkgConfig (missing: PKG_CONFIG_EXECUTABLE) 
+-- Could NOT find ZLIB (missing: ZLIB_LIBRARY) 
+-- Could NOT find PNG (missing: PNG_LIBRARY PNG_PNG_INCLUDE_DIR) 
+-- Could NOT find ZLIB (missing: ZLIB_LIBRARY) 
+CMake Deprecation Warning at core/deps/xbyak/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+-- Configuring done (64.5s)
+-- Generating done (1.2s)
+-- Build files have been written to: C:/Users/jpatt/deez-retro-work/build-win5

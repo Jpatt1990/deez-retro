@@ -1,0 +1,93 @@
+﻿diff --git a/CMakeLists.txt b/CMakeLists.txt
+index c5ac6f6..eb0b3fe 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -107,6 +107,19 @@ option(ENABLE_FC_PROFILER "Build with support for host app (Flycast) profiler" O
+ option(USE_DISCORD "Use Discord Presence API" OFF)
+ option(USE_LIBCDIO "Use libcdio for CDROM access" OFF)
+ 
++# --- Deez Retro ---------------------------------------------------------------
++# Build the emulation core as a linkable static library so that a custom
++# frontend can embed it, and provide a supported way to select the
++# interpreter-only configuration.
++#
++# DEEZRETRO_NO_REC defines TARGET_NO_REC, which makes core/build.h set
++# FEAT_SHREC, FEAT_AREC and FEAT_DSPREC all to DYNAREC_NONE. No dynamic
++# recompiler is compiled in and no executable memory is required at runtime,
++# so the build needs no JIT entitlement on iPadOS.
++option(DEEZRETRO_CORE_LIBRARY "Build a linkable core library, excluding the bundled iOS frontend" OFF)
++option(DEEZRETRO_NO_REC "Force interpreter-only CPU cores (no dynamic recompiler)" OFF)
++# ------------------------------------------------------------------------------
++
+ if(IOS AND NOT LIBRETRO)
+ 	set(USE_VULKAN OFF CACHE BOOL "Force vulkan off" FORCE)
+ endif()
+@@ -275,7 +288,13 @@ elseif(WIN32)
+ 		set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT ${PROJECT_NAME})
+ 	endif()
+ elseif(APPLE)
+-	add_executable(${PROJECT_NAME} MACOSX_BUNDLE core/emulator.cpp)
++	if(DEEZRETRO_CORE_LIBRARY)
++		# Deez Retro: a linkable static library, not a bundled iPhoneOS app.
++		add_library(${PROJECT_NAME} STATIC core/emulator.cpp)
++		set_target_properties(${PROJECT_NAME} PROPERTIES CMAKE_POSITION_INDEPENDENT_CODE ON)
++	else()
++		add_executable(${PROJECT_NAME} MACOSX_BUNDLE core/emulator.cpp)
++	endif()
+ else()
+ 	add_executable(${PROJECT_NAME} core/emulator.cpp)
+ endif()
+@@ -313,6 +332,8 @@ target_compile_definitions(${PROJECT_NAME} PRIVATE
+ 		$<$<BOOL:${IOS}>:GLES>
+ 		$<$<BOOL:${IOS}>:GLES3>
+ 		$<$<BOOL:${IOS}>:GLES_SILENCE_DEPRECATION>
++
++		$<$<BOOL:${DEEZRETRO_NO_REC}>:TARGET_NO_REC>
+ 		$<$<BOOL:${MSVC}>:_CRT_NONSTDC_NO_WARNINGS>
+ 		$<$<BOOL:${MSVC}>:_CRT_SECURE_NO_WARNINGS>
+ 		$<$<BOOL:${MSVC}>:_WINSOCK_DEPRECATED_NO_WARNING>
+@@ -1283,6 +1304,7 @@ if(NOT LIBRETRO)
+ 		string(REGEX MATCH "^[^-]+" TAG_VERSION ${GIT_VERSION})
+ 		if(IOS)
+ 			set_property(TARGET ${PROJECT_NAME} PROPERTY XCODE_ATTRIBUTE_SWIFT_VERSION "5.0")
++if(NOT DEEZRETRO_CORE_LIBRARY)
+ 			add_subdirectory(shell/apple/emulator-ios/AltKit)
+ 			target_link_libraries(${PROJECT_NAME} PRIVATE AltKit)
+ 
+@@ -1344,6 +1366,20 @@ if(NOT LIBRETRO)
+ 				XCODE_ATTRIBUTE_COMBINE_HIDPI_IMAGES NO
+ 				XCODE_ATTRIBUTE_ASSETCATALOG_COMPILER_APPICON_NAME "AppIcon"
+ 				XCODE_ATTRIBUTE_PRODUCT_BUNDLE_IDENTIFIER "com.flyinghead.Flycast")
++else()
++			# Deez Retro: library build. Only the shared Apple glue is compiled.
++			# The UIKit frontend (AppDelegate, FlycastViewController, storyboards,
++			# virtual pad, iCade, main.m) is excluded because our SwiftUI app
++			# replaces it. Bridge/DeezRetroShell.mm supplies the handful of
++			# symbols the core expects from that frontend.
++			target_sources(${PROJECT_NAME} PRIVATE
++					shell/apple/common/http_client.mm
++					shell/apple/common/util.mm)
++			set_source_files_properties(
++					shell/apple/common/http_client.mm
++					shell/apple/common/util.mm
++					PROPERTIES COMPILE_OPTIONS "-fobjc-arc")
++endif()
+ 
+ 			find_library(UIKIT UIKit)
+ 			find_library(FOUNDATION Foundation)
+@@ -1359,6 +1395,7 @@ if(NOT LIBRETRO)
+ 				${AUDIOTOOLBOX}
+ 				${AVFOUNDATION})
+ 
++if(NOT DEEZRETRO_CORE_LIBRARY)
+ 			add_custom_target(Flycast.IPA ALL
+ 				DEPENDS ${PROJECT_NAME}
+ 				COMMENT "Building IPA"
+@@ -1370,6 +1407,7 @@ if(NOT LIBRETRO)
+ 				COMMAND done
+ 				COMMAND ldid -S${CMAKE_CURRENT_SOURCE_DIR}/shell/apple/emulator-ios/emulator/flycast.entitlements ${CMAKE_CURRENT_BINARY_DIR}/Payload/Flycast.app/Flycast
+ 				COMMAND ${CMAKE_COMMAND} -E tar "cfv" "${CMAKE_CURRENT_BINARY_DIR}/$<CONFIG>-${CMAKE_OSX_SYSROOT}/Flycast.ipa" --format=zip ${CMAKE_CURRENT_BINARY_DIR}/Payload)
++endif()
+ 		else()
+ 
+ 			add_subdirectory(core/deps/Syphon)

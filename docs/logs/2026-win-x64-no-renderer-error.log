@@ -1,0 +1,1517 @@
+MSBuild version 17.14.51+25f168cee for .NET Framework
+
+  1>Checking Build System
+  Generating include/SDL2/SDL.h
+  Generating include/SDL2/SDL_assert.h
+  Generating include/SDL2/SDL_atomic.h
+  Generating include/SDL2/SDL_audio.h
+  Building Custom Rule C:/Users/jpatt/deez-retro-work/upstream/flycast/core/deps/xxHash/cmake_unofficial/CMakeLists.txt
+  Building Custom Rule C:/Users/jpatt/deez-retro-work/upstream/flycast/core/deps/libchdr/deps/lzma-24.05/CMakeLists.txt
+  Building Custom Rule C:/Users/jpatt/deez-retro-work/upstream/flycast/core/deps/Spout/SPOUTSDK/SpoutGL/CMakeLists.txt
+  Building Custom Rule C:/Users/jpatt/deez-retro-work/upstream/flycast/core/deps/tinygettext/CMakeLists.txt
+  Building Custom Rule C:/Users/jpatt/deez-retro-work/upstream/flycast/core/deps/libelf/CMakeLists.txt
+  Building Custom Rule C:/Users/jpatt/deez-retro-work/upstream/flycast/core/deps/Spout/SPOUTSDK/SpoutDirectX/SpoutDX/CMakeLists.txt
+  Building Custom Rule C:/Users/jpatt/deez-retro-work/upstream/flycast/core/deps/libchdr/deps/zstd-1.5.6/build/cmake/lib/CMakeLists.txt
+  Building Custom Rule C:/Users/jpatt/deez-retro-work/upstream/flycast/core/deps/DreamPicoPort-API/ext/libusb-cmake/CMakeLists.txt
+  Building Custom Rule C:/Users/jpatt/deez-retro-work/upstream/flycast/core/deps/miniupnpc/CMakeLists.txt
+  Building Custom Rule C:/Users/jpatt/deez-retro-work/upstream/flycast/core/deps/libjuice/CMakeLists.txt
+  Building Custom Rule C:/Users/jpatt/deez-retro-work/upstream/flycast/core/deps/freetype/CMakeLists.txt
+  Building Custom Rule C:/Users/jpatt/deez-retro-work/upstream/flycast/core/deps/nowide/CMakeLists.txt
+  Generating include/SDL2/SDL_bits.h
+  Assembling C:\Users\jpatt\deez-retro-work\upstream\flycast\core\deps\libchdr\deps\lzma-24.05\Asm\x86\LzmaDecOpt.asm...
+  Generating include/SDL2/SDL_blendmode.h
+  Generating include/SDL2/SDL_clipboard.h
+  Building Custom Rule C:/Users/jpatt/deez-retro-work/upstream/flycast/core/deps/libchdr/deps/zlib-1.3.1/CMakeLists.txt
+  Generating include/SDL2/SDL_copying.h
+  Generating flycast-resources resource loader
+  Generating include/SDL2/SDL_cpuinfo.h
+  Generating intermediate file for C:/Users/jpatt/deez-retro-work/upstream/flycast/resources/flash/alienfnt.nvmem.zip
+  Generating include/SDL2/SDL_egl.h
+  Generating include/SDL2/SDL_endian.h
+  Generating intermediate file for C:/Users/jpatt/deez-retro-work/upstream/flycast/resources/flash/gunsur2.nvmem.zip
+  Generating include/SDL2/SDL_error.h
+  Generating intermediate file for C:/Users/jpatt/deez-retro-work/upstream/flycast/resources/flash/mazan.nvmem.zip
+  Generating include/SDL2/SDL_events.h
+  Generating intermediate file for C:/Users/jpatt/deez-retro-work/upstream/flycast/resources/flash/otrigger.nvmem.zip
+  Generating include/SDL2/SDL_filesystem.h
+  Generating intermediate file for C:/Users/jpatt/deez-retro-work/upstream/flycast/resources/flash/wldkicks.nvmem.zip
+  Generating include/SDL2/SDL_gamecontroller.h
+  Generating intermediate file for C:/Users/jpatt/deez-retro-work/upstream/flycast/resources/flash/wldkicksj.nvmem.zip
+  Generating include/SDL2/SDL_gesture.h
+  Generating intermediate file for C:/Users/jpatt/deez-retro-work/upstream/flycast/resources/flash/wldkicksu.nvmem.zip
+  Generating include/SDL2/SDL_guid.h
+  Generating intermediate file for C:/Users/jpatt/deez-retro-work/upstream/flycast/resources/flash/f355.nvmem.zip
+  Generating include/SDL2/SDL_haptic.h
+  Generating include/SDL2/SDL_hidapi.h
+  Generating intermediate file for C:/Users/jpatt/deez-retro-work/upstream/flycast/resources/flash/f355twin.nvmem.zip
+  Generating include/SDL2/SDL_hints.h
+  Generating intermediate file for C:/Users/jpatt/deez-retro-work/upstream/flycast/resources/flash/f355twn2.nvmem.zip
+  Generating include/SDL2/SDL_joystick.h
+  Generating intermediate file for C:/Users/jpatt/deez-retro-work/upstream/flycast/resources/flash/dirtypig.nvmem.zip
+  Generating include/SDL2/SDL_keyboard.h
+  Generating intermediate file for C:/Users/jpatt/deez-retro-work/upstream/flycast/resources/flash/dirtypig.nvmem2.zip
+  Generating include/SDL2/SDL_keycode.h
+  Generating intermediate file for C:/Users/jpatt/deez-retro-work/upstream/flycast/resources/flash/vf4.nvmem.zip
+  Generating include/SDL2/SDL_loadso.h
+  Generating intermediate file for C:/Users/jpatt/deez-retro-work/upstream/flycast/resources/flash/vf4evob.nvmem.zip
+  Generating include/SDL2/SDL_locale.h
+  Generating intermediate file for C:/Users/jpatt/deez-retro-work/upstream/flycast/resources/flash/vf4tuned.nvmem.zip
+  Generating include/SDL2/SDL_log.h
+  Generating intermediate file for C:/Users/jpatt/deez-retro-work/upstream/flycast/resources/flash/magicpop.nvmem.zip
+  Generating include/SDL2/SDL_main.h
+  Generating include/SDL2/SDL_messagebox.h
+  Generating intermediate file for C:/Users/jpatt/deez-retro-work/upstream/flycast/resources/flash/ochaken.nvmem.zip
+  Generating include/SDL2/SDL_metal.h
+  Generating intermediate file for C:/Users/jpatt/deez-retro-work/upstream/flycast/resources/flash/puyomedal.nvmem.zip
+  Generating include/SDL2/SDL_misc.h
+  Generating intermediate file for C:/Users/jpatt/deez-retro-work/upstream/flycast/resources/flash/unomedal.nvmem.zip
+  Generating include/SDL2/SDL_mouse.h
+  Generating intermediate file for C:/Users/jpatt/deez-retro-work/upstream/flycast/resources/flash/westdrmg.nvmem.zip
+  Generating include/SDL2/SDL_mutex.h
+  Generating intermediate file for C:/Users/jpatt/deez-retro-work/upstream/flycast/resources/flash/smarinef.nvmem.zip
+  Generating include/SDL2/SDL_name.h
+  Generating intermediate file for C:/Users/jpatt/deez-retro-work/upstream/flycast/resources/picture/f355_print_template.png
+  Generating include/SDL2/SDL_opengl.h
+  Generating include/SDL2/SDL_opengl_glext.h
+  Generating include/SDL2/SDL_opengles.h
+  Generating include/SDL2/SDL_opengles2.h
+  Generating include/SDL2/SDL_opengles2_gl2.h
+  Generating include/SDL2/SDL_opengles2_gl2ext.h
+  Generating include/SDL2/SDL_opengles2_gl2platform.h
+  Generating include/SDL2/SDL_opengles2_khrplatform.h
+  Generating include/SDL2/SDL_pixels.h
+  Generating include/SDL2/SDL_platform.h
+  Generating include/SDL2/SDL_power.h
+  Generating include/SDL2/SDL_quit.h
+  Generating include/SDL2/SDL_rect.h
+  Generating include/SDL2/SDL_render.h
+  Generating include/SDL2/SDL_rwops.h
+  Generating include/SDL2/SDL_scancode.h
+  Generating include/SDL2/SDL_sensor.h
+  Generating include/SDL2/SDL_shape.h
+  Generating include/SDL2/SDL_stdinc.h
+  Generating include/SDL2/SDL_surface.h
+  Generating include/SDL2/SDL_system.h
+  Generating include/SDL2/SDL_syswm.h
+  Generating include/SDL2/SDL_test.h
+  Generating include/SDL2/SDL_test_assert.h
+  Generating include/SDL2/SDL_test_common.h
+  Generating include/SDL2/SDL_test_compare.h
+  Generating include/SDL2/SDL_test_crc32.h
+  Generating include/SDL2/SDL_test_font.h
+  Generating include/SDL2/SDL_test_fuzzer.h
+  Generating include/SDL2/SDL_test_harness.h
+  Generating include/SDL2/SDL_test_images.h
+  Generating include/SDL2/SDL_test_log.h
+  Generating include/SDL2/SDL_test_md5.h
+  Generating include/SDL2/SDL_test_memory.h
+  Generating include/SDL2/SDL_test_random.h
+  Generating include/SDL2/SDL_thread.h
+  Generating include/SDL2/SDL_timer.h
+  Generating include/SDL2/SDL_touch.h
+  Generating include/SDL2/SDL_types.h
+  Generating include/SDL2/SDL_version.h
+  Generating include/SDL2/SDL_video.h
+  Generating include/SDL2/SDL_vulkan.h
+  Generating intermediate file for C:/Users/jpatt/deez-retro-work/upstream/flycast/fonts/printer_ascii8x16.bin.zip
+  Generating include/SDL2/begin_code.h
+  Generating intermediate file for C:/Users/jpatt/deez-retro-work/upstream/flycast/fonts/printer_ascii12x24.bin.zip
+  Generating include/SDL2/close_code.h
+  Generating intermediate file for C:/Users/jpatt/deez-retro-work/upstream/flycast/fonts/printer_kanji16x16.bin.zip
+  Building Custom Rule C:/Users/jpatt/deez-retro-work/upstream/flycast/core/deps/SDL/CMakeLists.txt
+  Building Custom Rule C:/Users/jpatt/deez-retro-work/upstream/flycast/core/deps/SDL/CMakeLists.txt
+  Building Custom Rule C:/Users/jpatt/deez-retro-work/upstream/flycast/core/deps/SDL/CMakeLists.txt
+  elf32.c
+  console_buffer.cpp
+  Bra.c
+  xxhash.c
+  iostream.cpp
+  stat.cpp
+  Spout.cpp
+  elf64.c
+  Sort.c
+  gzread.c
+  elf.c
+  adler32.c
+  CpuArch.c
+  filebuf.cpp
+  Lzma86Dec.c
+  Delta.c
+  Bra86.c
+  LzmaEnc.c
+  Alloc.c
+  BraIA64.c
+  LzFind.c
+  cstdlib.cpp
+  LzmaDec.c
+  cstdio.cpp
+  Generating intermediate file for C:/Users/jpatt/deez-retro-work/upstream/flycast/fonts/printer_kanji24x24.bin.zip
+  crc32.c
+  gzwrite.c
+  deflate.c
+  addr_is_reserved.c
+  ftbbox.c
+  zstd_compress_superblock.c
+  elf.vcxproj -> C:\Users\jpatt\deez-retro-work\build-win4\core\deps\libelf\Release\elf.lib
+  xxhash.vcxproj -> C:\Users\jpatt\deez-retro-work\build-win4\core\deps\xxHash\cmake_unofficial\Release\xxhash.lib
+  SDL_utils.c
+  SDL_spinlock.c
+  SDL_atomic.c
+  SDL_log.c
+  minixml.c
+  SDL_guid.c
+  SpoutSender.cpp
+  ftbdf.c
+  zstd_lazy.c
+  cff.c
+  ftcache.c
+  type1cid.c
+  SDL_audiodev.c
+  ftbzip2.c
+  ftwinfnt.c
+  fttype1.c
+  bdf.c
+  SDL_cpuinfo.c
+  Generating intermediate file for C:/Users/jpatt/deez-retro-work/upstream/flycast/fonts/Roboto-Medium.ttf.zip
+  SDL_list.c
+  udp.c
+  SDL_audiocvt.c
+  SDL_audio.c
+  lzma.vcxproj -> C:\Users\jpatt\deez-retro-work\build-win4\core\deps\libchdr\deps\lzma-24.05\Release\lzma.lib
+  SDL_dropevents.c
+  ftgzip.c
+  SDL_audiotypecvt.c
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\deps\nowide\src\iostream.cpp(106,13): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\core\deps\nowide\nowide.vcxproj]
+  zutil.c
+  SDL_keysym_to_scancode.c
+  SpoutUtils.cpp
+  uncompr.c
+  ftbitmap.c
+  SDL_windowevents.c
+  ftcid.c
+  SpoutSharedMemory.cpp
+  Generating intermediate file for C:/Users/jpatt/deez-retro-work/upstream/flycast/fonts/Roboto-Bold.ttf.zip
+  ftlzw.c
+  psnames.c
+  SDL_mouse.c
+  crc32.c
+  SDL_assert.c
+  upnperrors.c
+  upnpdev.c
+  connecthostport.c
+  SDL_hints.c
+  xxhash.c
+  zstd_common.c
+  SDL.c
+  threading.c
+  fse_compress.c
+  Generating intermediate file for C:/Users/jpatt/deez-retro-work/upstream/flycast/fonts/fa-solid-900.ttf.zip
+  nowide.vcxproj -> C:\Users\jpatt\deez-retro-work\build-win4\core\deps\nowide\Release\nowide.lib
+  fse_decompress.c
+  SDL_events.c
+  SpoutCopy.cpp
+  SDL_gesture.c
+  SDL_gamecontroller.c
+  SDL_hidapi.c
+  psaux.c
+  SDL_haptic.c
+  gzclose.c
+  svg.c
+  sfnt.c
+  SDL_joystick.c
+  SDL_steam_virtual_gamepad.c
+  Generating intermediate file for C:/Users/jpatt/deez-retro-work/upstream/flycast/fonts/biosfont.bin.zip
+  ftsynth.c
+  SDL_scancode_tables.c
+  smooth.c
+  ftotval.c
+  e_atan2.c
+  SDL_rwops.c
+  type1.c
+  SDL_touch.c
+  e_log.c
+  controller_type.c
+  SDL_quit.c
+  pshinter.c
+  pfr.c
+  ice.c
+  fastcover.c
+  inffast.c
+  pool.c
+  cover.c
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\deps\Spout\SPOUTSDK\SpoutGL\SpoutSharedMemory.cpp(73,2): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\core\deps\Spout\SPOUTSDK\SpoutGL\Spout_static.vcxproj]
+  e_pow.c
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(781,9): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\core\deps\Spout\SPOUTSDK\SpoutGL\Spout_static.vcxproj]
+  (compiling source file '../../../../../../upstream/flycast/core/deps/Spout/SPOUTSDK/SpoutGL/SpoutUtils.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(781,9):
+      the template instantiation context (the oldest one first) is
+          C:\Users\jpatt\deez-retro-work\upstream\flycast\core\deps\Spout\SPOUTSDK\SpoutGL\SpoutUtils.cpp(820,16):
+          see reference to function template instantiation 'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const char *)' being compiled
+  
+  type42.c
+  SpoutDX.cpp
+  Generating intermediate file for C:/Users/jpatt/deez-retro-work/upstream/flycast/resources/i18n/fr.po
+  imKStoUCS.c
+  ftsystem.c
+  e_rem_pio2.c
+  winfnt.c
+  zstd_decompress.c
+  raster.c
+  ftdebug.c
+  Generating intermediate file for C:/Users/jpatt/deez-retro-work/upstream/flycast/resources/i18n/hu.po
+  pcf.c
+  SpoutSender.cpp
+  zstd_compress_sequences.c
+  log.c
+  SpoutGLextensions.cpp
+  zstd_compress_literals.c
+  SpoutFrameCount.cpp
+  SpoutReceiver.cpp
+  SpoutGLextensions.cpp
+  k_rem_pio2.c
+  s_fabs.c
+  Generating intermediate file for C:/Users/jpatt/deez-retro-work/upstream/flycast/resources/i18n/ja.po
+  ftbase.c
+  s_cos.c
+  s_atan.c
+  s_tan.c
+  k_tan.c
+  SpoutFrameCount.cpp
+  SpoutSenderNames.cpp
+  s_scalbn.c
+  s_copysign.c
+  Generating intermediate file for C:/Users/jpatt/deez-retro-work/upstream/flycast/resources/i18n/pt_BR.po
+  SpoutSharedMemory.cpp
+  hist.c
+  s_floor.c
+  e_fmod.c
+  hash.c
+  sync.c
+  s_sin.c
+  conn_mux.c
+  SpoutGL.cpp
+  SpoutDirectX.cpp
+  SpoutCopy.cpp
+  Spout.cpp
+  Generating intermediate file for C:/Users/jpatt/deez-retro-work/upstream/flycast/resources/i18n/sv.po
+  SpoutReceiver.cpp
+  zstd_fast.c
+  base64.c
+  e_sqrt.c
+  SDL_yuv_sw.c
+  conn.c
+  agent.c
+  Generating intermediate file for C:/Users/jpatt/deez-retro-work/upstream/flycast/resources/i18n/zh_CN.po
+  SDL_shaders_d3d.c
+  infback.c
+  compress.c
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\deps\Spout\SPOUTSDK\SpoutGL\SpoutFrameCount.cpp(611,2): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\core\deps\Spout\SPOUTSDK\SpoutDirectX\SpoutDX\SpoutDX_static.vcxproj]
+  inflate.c
+  inftrees.c
+  Generating intermediate file for C:/Users/jpatt/deez-retro-work/upstream/flycast/resources/i18n/zh_HK.po
+  SpoutGL.cpp
+  SDL_d3dmath.c
+  SDL_power.c
+  entropy_common.c
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\deps\Spout\SPOUTSDK\SpoutGL\SpoutFrameCount.cpp(611,2): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\core\deps\Spout\SPOUTSDK\SpoutGL\Spout_static.vcxproj]
+  Generating intermediate file for C:/Users/jpatt/deez-retro-work/upstream/flycast/resources/i18n/zh_TW.po
+  SDL_render_d3d.c
+  SDL_render.c
+  k_cos.c
+  SDL_render_gl.c
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\deps\Spout\SPOUTSDK\SpoutGL\SpoutSharedMemory.cpp(73,2): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\core\deps\Spout\SPOUTSDK\SpoutDirectX\SpoutDX\SpoutDX_static.vcxproj]
+  zstd_double_fast.c
+  autofit.c
+  Building Custom Rule C:/Users/jpatt/deez-retro-work/upstream/flycast/CMakeLists.txt
+  debug.c
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\deps\Spout\SPOUTSDK\SpoutGL\SpoutDirectX.cpp(219,2): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\core\deps\Spout\SPOUTSDK\SpoutDirectX\SpoutDX\SpoutDX_static.vcxproj]
+  SDL_render_gles.c
+  SDL_shaders_gl.c
+  SDL_render_gles2.c
+  stun.c
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\deps\Spout\SPOUTSDK\SpoutGL\SpoutGL.cpp(315,2): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\core\deps\Spout\SPOUTSDK\SpoutDirectX\SpoutDX\SpoutDX_static.vcxproj]
+  conn_thread.c
+  random.c
+  const_time.c
+  SDL_shaders_d3d12.c
+  SDL_dataqueue.c
+  juice.c
+  receivedata.c
+  SDL_shaders_gles2.c
+  SpoutSenderNames.cpp
+  server.c
+  printer_ascii8x16.bin.zip.cpp
+  SDL_render_ps2.c
+  SDL_render_psp.c
+  turn.c
+  ftfstype.c
+  timestamp.c
+  ftpfr.c
+  ftmm.c
+  ftgasp.c
+  ftinit.c
+  ftpatent.c
+  ftglyph.c
+  zstd_decompress_block.c
+  zstd_opt.c
+  SDL_blendline.c
+  ftstroke.c
+  gzlib.c
+  SDL_drawline.c
+  SDL_blendpoint.c
+  zdict.c
+  trees.c
+  SDL_drawpoint.c
+  SpoutUtils.cpp
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\deps\Spout\SPOUTSDK\SpoutGL\SpoutGL.cpp(315,2): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\core\deps\Spout\SPOUTSDK\SpoutGL\Spout_static.vcxproj]
+  SDL_rotate.c
+  ftgxval.c
+  wldkicks.nvmem.zip.cpp
+  SDL_render_vita_gxm.c
+  wldkicksj.nvmem.zip.cpp
+  f355.nvmem.zip.cpp
+  wldkicksu.nvmem.zip.cpp
+  otrigger.nvmem.zip.cpp
+  SDL_triangle.c
+  vf4.nvmem.zip.cpp
+  puyomedal.nvmem.zip.cpp
+  SDL_blendfillrect.c
+  vf4evob.nvmem.zip.cpp
+  ochaken.nvmem.zip.cpp
+  unomedal.nvmem.zip.cpp
+  gunsur2.nvmem.zip.cpp
+  mazan.nvmem.zip.cpp
+  SDL_render_vita_gxm_memory.c
+  SDL_render_vita_gxm_tools.c
+  magicpop.nvmem.zip.cpp
+  f355twin.nvmem.zip.cpp
+  vf4tuned.nvmem.zip.cpp
+  zlibstatic.vcxproj -> C:\Users\jpatt\deez-retro-work\build-win4\core\deps\libchdr\deps\zlib-1.3.1\Release\zlibstatic.lib
+  SDL_sensor.c
+  f355twn2.nvmem.zip.cpp
+  SDL_url.c
+  truetype.c
+  hmac.c
+  SDL_render_sw.c
+  printer_ascii12x24.bin.zip.cpp
+  printer_kanji16x16.bin.zip.cpp
+  biosfont.bin.zip.cpp
+  dirtypig.nvmem.zip.cpp
+  alienfnt.nvmem.zip.cpp
+  Roboto-Medium.ttf.zip.cpp
+  dirtypig.nvmem2.zip.cpp
+  lib.cpp
+  sv.po.cpp
+  fa-solid-900.ttf.zip.cpp
+  printer_kanji24x24.bin.zip.cpp
+  Roboto-Bold.ttf.zip.cpp
+  SDL_crc32.c
+  SDL_getenv.c
+  SDL_mslibc.c
+  SDL_iconv.c
+  SDL_malloc.c
+  zh_CN.po.cpp
+  fr.po.cpp
+  SDL_clipboardevents.c
+  SDL_qsort.c
+  SDL_mixer.c
+  SpoutDirectX.cpp
+  SDL_dynapi.c
+  SDL_wave.c
+  portlistingparse.c
+  SDL_stdlib.c
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(781,9): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\core\deps\Spout\SPOUTSDK\SpoutDirectX\SpoutDX\SpoutDX_static.vcxproj]
+  hotplug.c
+  (compiling source file '../../../../../../../upstream/flycast/core/deps/Spout/SPOUTSDK/SpoutGL/SpoutUtils.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(781,9):
+      the template instantiation context (the oldest one first) is
+          C:\Users\jpatt\deez-retro-work\upstream\flycast\core\deps\Spout\SPOUTSDK\SpoutGL\SpoutUtils.cpp(820,16):
+          see reference to function template instantiation 'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const char *)' being compiled
+  
+  SDL_string.c
+  SDL_strtokr.c
+  SDL_render_d3d11.c
+  pt_BR.po.cpp
+  threads_windows.c
+  SDL_thread.c
+  sdf.c
+  SDL_RLEaccel.c
+  e_exp.c
+  upnpcommands.c
+  SDL_timer.c
+  SDL_blit.c
+  addr.c
+  miniwget.c
+  minissdpc.c
+  SDL_blit_0.c
+  e_log10.c
+  SDL_blit_auto.c
+  SDL_blit_1.c
+  SDL_blit_A.c
+  SDL_blit_N.c
+  tinygettext.cpp
+  SDL_windows_main.c
+  iconv.cpp
+  minisoap.c
+  strerror.c
+  unix_file_system.cpp
+  plural_forms.cpp
+  po_parser.cpp
+  SDL_bmp.c
+  SDL_crc16.c
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\deps\Spout\SPOUTSDK\SpoutGL\SpoutDirectX.cpp(219,2): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\core\deps\Spout\SPOUTSDK\SpoutGL\Spout_static.vcxproj]
+  SDL_egl.c
+  language.cpp
+  SDL_blit_slow.c
+  SDL_blit_copy.c
+  io.c
+  conn_poll.c
+  SpoutDX_static.vcxproj -> C:\Users\jpatt\deez-retro-work\build-win4\core\deps\Spout\SPOUTSDK\SpoutDirectX\SpoutDX\Release\SpoutDX_static.lib
+  SDL_clipboard.c
+  SDL_locale.c
+  SDL_fillrect.c
+  miniupnpc.c
+  SDL_pixels.c
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(781,9): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\core\deps\tinygettext\tinygettext.vcxproj]
+  SDL_rect.c
+  (compiling source file '../../../../upstream/flycast/core/deps/tinygettext/src/iconv.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(781,9):
+      the template instantiation context (the oldest one first) is
+          C:\Users\jpatt\deez-retro-work\upstream\flycast\core\deps\tinygettext\include\tinygettext\iconv.hpp(64,17):
+          see reference to function template instantiation 'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const char *)' being compiled
+  
+  huf_decompress.c
+  SDL2main.vcxproj -> C:\Users\jpatt\deez-retro-work\build-win4\core\deps\SDL\Release\SDL2main.lib
+  zstdmt_compress.c
+  huf_compress.c
+  zstd_compress.c
+  zstd_ldm.c
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\deps\tinygettext\src\po_parser.cpp(348,5): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\core\deps\tinygettext\tinygettext.vcxproj]
+  smarinef.nvmem.zip.cpp
+  yuv_rgb_sse.c
+  freetype.vcxproj -> C:\Users\jpatt\deez-retro-work\build-win4\core\deps\freetype\Release\freetype.lib
+  yuv_rgb_std.c
+  igd_desc_parse.c
+  SDL_vulkan_utils.c
+  SDL_diskaudio.c
+  k_sin.c
+  upnpreplyparse.c
+  SDL_displayevents.c
+  f355_print_template.png.cpp
+  SDL_virtualjoystick.c
+  SDL_dummyaudio.c
+  error_private.c
+  westdrmg.nvmem.zip.cpp
+  divsufsort.c
+  yuv_rgb_lsx.c
+  SDL_nullevents.c
+  juice-static.vcxproj -> C:\Users\jpatt\deez-retro-work\build-win4\core\deps\libjuice\Release\juice-static.lib
+  Spout_static.vcxproj -> C:\Users\jpatt\deez-retro-work\build-win4\core\deps\Spout\SPOUTSDK\SpoutGL\Release\Spout_static.lib
+  windows_common.c
+  events_windows.c
+  SDL_offscreenevents.c
+  SDL_nullframebuffer.c
+  windows_winusb.c
+  windows_usbdk.c
+  SDL_offscreenvideo.c
+  zstd_ddict.c
+  SDL_render_d3d12.c
+  libminiupnpc-static.vcxproj -> C:\Users\jpatt\deez-retro-work\build-win4\core\deps\miniupnpc\Release\libminiupnpc.lib
+  SDL_keyboard.c
+  core.c
+  SDL_immdevice.c
+  descriptor.c
+  dictionary_manager.cpp
+  log.cpp
+  dictionary.cpp
+  SDL_offscreenwindow.c
+  SDL_offscreenopengles.c
+  SDL_surface.c
+  SDL_winmm.c
+  SDL_directsound.c
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\deps\DreamPicoPort-API\ext\libusb-cmake\libusb\libusb\os\windows_winusb.c(2154,62): warning C5287: operands are different enum types 'libusb_endpoint_direction' and 'libusb_request_type'; use an explicit cast to silence this warning [C:\Users\jpatt\deez-retro-work\build-win4\core\deps\DreamPicoPort-API\ext\libusb-cmake\usb-1.0.vcxproj]
+  SDL_wasapi.c
+  SDL_yuv.c
+  SDL_video.c
+  SDL_offscreenframebuffer.c
+  hu.po.cpp
+  SDL_wasapi_win32.c
+  libzstd_static.vcxproj -> C:\Users\jpatt\deez-retro-work\build-win4\core\deps\libchdr\deps\zstd-1.5.6\build\cmake\lib\Release\zstd_static.lib
+  SDL_stretch.c
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\deps\tinygettext\src\dictionary_manager.cpp(156,9): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\core\deps\tinygettext\tinygettext.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(781,9): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\core\deps\tinygettext\tinygettext.vcxproj]
+  (compiling source file '../../../../upstream/flycast/core/deps/tinygettext/src/log.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(781,9):
+      the template instantiation context (the oldest one first) is
+          C:\Users\jpatt\deez-retro-work\upstream\flycast\core\deps\tinygettext\src\log.cpp(32,13):
+          see reference to function template instantiation 'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const char *)' being compiled
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(781,9): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\core\deps\tinygettext\tinygettext.vcxproj]
+  zh_TW.po.cpp
+  SDL_windowsframebuffer.c
+  (compiling source file '../../../../upstream/flycast/core/deps/tinygettext/src/dictionary.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(781,9):
+      the template instantiation context (the oldest one first) is
+          C:\Users\jpatt\deez-retro-work\upstream\flycast\core\deps\tinygettext\src\dictionary.cpp(34,9):
+          see reference to function template instantiation 'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const char *)' being compiled
+  
+  zh_HK.po.cpp
+  SDL_error.c
+  SDL_windowsevents.c
+  SDL_windowsclipboard.c
+  SDL_shaders_d3d11.c
+  ja.po.cpp
+  Building Custom Rule C:/Users/jpatt/deez-retro-work/upstream/flycast/core/deps/libchdr/CMakeLists.txt
+  SDL_nullvideo.c
+  SDL_shape.c
+  Generating zip_err_str.c
+  SDL_hid.c
+  SDL_windows.c
+  SDL_windowsmodes.c
+  SDL_windowsmessagebox.c
+  SDL_windowskeyboard.c
+  SDL_windowsopengl.c
+  SDL_windowsopengles.c
+  SDL_windowsmouse.c
+  Building Custom Rule C:/Users/jpatt/deez-retro-work/upstream/flycast/core/deps/libzip/lib/CMakeLists.txt
+  SDL_windowsvideo.c
+  SDL_windowsvulkan.c
+  SDL_xinput.c
+  SDL_sysurl.c
+  SDL_windowswindow.c
+  SDL_windowsshape.c
+  usb-1.0.vcxproj -> C:\Users\jpatt\deez-retro-work\build-win4\core\deps\DreamPicoPort-API\ext\libusb-cmake\Release\libusb-1.0.lib
+  SDL_syscond.c
+  SDL_systhread.c
+  SDL_sysmutex.c
+  SDL_syscond_cv.c
+  SDL_syssem.c
+  SDL_systls.c
+  SDL_windowssensor.c
+  SDL_syspower.c
+  SDL_syslocale.c
+  SDL_sysfilesystem.c
+  libchdr_bitstream.c
+  libchdr_cdrom.c
+  flycast-resources.vcxproj -> C:\Users\jpatt\deez-retro-work\build-win4\Release\flycast-resources.lib
+  libchdr_chd.c
+  libchdr_flac.c
+  libchdr_huffman.c
+  SDL_sysloadso.c
+  SDL_systimer.c
+  SDL_hidapi_combined.c
+  tinygettext.vcxproj -> C:\Users\jpatt\deez-retro-work\build-win4\core\deps\tinygettext\Release\tinygettext.lib
+  SDL_hidapi_luna.c
+  SDL_hidapi_gamecube.c
+  zip_add.c
+  SDL_hidapi_ps4.c
+  zip_add_dir.c
+  zip_add_entry.c
+  zip_algorithm_deflate.c
+  SDL_hidapi_rumble.c
+  zip_buffer.c
+  zip_delete.c
+  Building Custom Rule C:/Users/jpatt/deez-retro-work/upstream/flycast/core/deps/DreamPicoPort-API/src/CMakeLists.txt
+  SDL_hidapi_ps3.c
+  SDL_hidapi_stadia.c
+  SDL_hidapijoystick.c
+  SDL_hidapi_shield.c
+  SDL_hidapi_steam.c
+  SDL_hidapi_steamdeck.c
+  zip_close.c
+  SDL_hidapi_switch.c
+  zip_dirent.c
+  zip_discard.c
+  zip_dir_add.c
+  zip_error.c
+  zip_error_get_sys_type.c
+  zip_entry.c
+  zip_error_clear.c
+  zip_error_get.c
+  SDL_hidapi_ps5.c
+  zip_error_strerror.c
+  SDL_windowsjoystick.c
+  zip_file_get_comment.c
+  SDL_windowshaptic.c
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35228 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /I"C:\Users\jpatt\deez-retro-work\upstream\flycast\core\deps\DreamPicoPort-API\src" /I"C:\Users\jpatt\deez-retro-work\upstream\flycast\core\deps\dirent" /W1 /WX- /diagnostics:column /O2 /Ob2 /D _MBCS /D NDEBUG /D "CMAKE_INTDIR=\"Release\"" /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"dream_pico_port_api.dir\Release\\" /Fd"C:\Users\jpatt\deez-retro-work\build-win4\core\deps\DreamPicoPort-API\src\Release\dream_pico_port_api.pdb" /external:W0 /Gd /TP /errorReport:queue  /external:I "C:/Users/jpatt/deez-retro-work/upstream/flycast/core/deps/DreamPicoPort-API/ext/libusb-cmake/libusb/libusb" "C:\Users\jpatt\deez-retro-work\upstream\flycast\core\deps\DreamPicoPort-API\src\DppLibusbDeviceImp.cpp"
+  SDL_dinputhaptic.c
+  DppLibusbDeviceImp.cpp
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35228 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /I"C:\Users\jpatt\deez-retro-work\upstream\flycast\core\deps\DreamPicoPort-API\src" /I"C:\Users\jpatt\deez-retro-work\upstream\flycast\core\deps\dirent" /W1 /WX- /diagnostics:column /O2 /Ob2 /D _MBCS /D NDEBUG /D "CMAKE_INTDIR=\"Release\"" /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"dream_pico_port_api.dir\Release\\" /Fd"C:\Users\jpatt\deez-retro-work\build-win4\core\deps\DreamPicoPort-API\src\Release\dream_pico_port_api.pdb" /external:W0 /Gd /TP /errorReport:queue  /external:I "C:/Users/jpatt/deez-retro-work/upstream/flycast/core/deps/DreamPicoPort-API/ext/libusb-cmake/libusb/libusb" "C:\Users\jpatt\deez-retro-work\upstream\flycast\core\deps\DreamPicoPort-API\src\DppDeviceImp.cpp"
+  SDL_xinputhaptic.c
+  zip_file_replace.c
+  DppDeviceImp.cpp
+  zip_file_error_get.c
+  zip_fdopen.c
+  SDL_xinputjoystick.c
+  zip_file_get_offset.c
+  zip_fclose.c
+  zip_file_rename.c
+  zip_file_add.c
+  zip_file_set_comment.c
+  zip_file_error_clear.c
+  zip_file_get_external_attributes.c
+  zip_file_set_encryption.c
+  zip_file_strerror.c
+  zip_file_set_external_attributes.c
+  zip_file_set_mtime.c
+  zip_fopen_index.c
+  zip_fopen.c
+  zip_fseek.c
+  zip_fopen_encrypted.c
+  zip_fopen_index_encrypted.c
+  zip_extra_field_api.c
+  zip_error_to_str.c
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35228 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /I"C:\Users\jpatt\deez-retro-work\upstream\flycast\core\deps\DreamPicoPort-API\src" /I"C:\Users\jpatt\deez-retro-work\upstream\flycast\core\deps\dirent" /W1 /WX- /diagnostics:column /O2 /Ob2 /D _MBCS /D NDEBUG /D "CMAKE_INTDIR=\"Release\"" /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"dream_pico_port_api.dir\Release\\" /Fd"C:\Users\jpatt\deez-retro-work\build-win4\core\deps\DreamPicoPort-API\src\Release\dream_pico_port_api.pdb" /external:W0 /Gd /TP /errorReport:queue  /external:I "C:/Users/jpatt/deez-retro-work/upstream/flycast/core/deps/DreamPicoPort-API/ext/libusb-cmake/libusb/libusb" "C:\Users\jpatt\deez-retro-work\upstream\flycast\core\deps\DreamPicoPort-API\src\DreamPicoPortApi.cpp"
+  zip_fread.c
+  zip_extra_field.c
+  DreamPicoPortApi.cpp
+  zip_ftell.c
+  zip_get_name.c
+  zip_get_archive_flag.c
+  zip_get_num_entries.c
+  zip_get_encryption_implementation.c
+  zip_get_file_comment.c
+  zip_io_util.c
+  zip_libzip_version.c
+  SDL_hidapi_xboxone.c
+  zip_memdup.c
+  SDL_hidapi_wii.c
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35228 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /I"C:\Users\jpatt\deez-retro-work\upstream\flycast\core\deps\DreamPicoPort-API\src" /I"C:\Users\jpatt\deez-retro-work\upstream\flycast\core\deps\dirent" /W1 /WX- /diagnostics:column /O2 /Ob2 /D _MBCS /D NDEBUG /D "CMAKE_INTDIR=\"Release\"" /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"dream_pico_port_api.dir\Release\\" /Fd"C:\Users\jpatt\deez-retro-work\build-win4\core\deps\DreamPicoPort-API\src\Release\dream_pico_port_api.pdb" /external:W0 /Gd /TP /errorReport:queue  /external:I "C:/Users/jpatt/deez-retro-work/upstream/flycast/core/deps/DreamPicoPort-API/ext/libusb-cmake/libusb/libusb" "C:\Users\jpatt\deez-retro-work\upstream\flycast\core\deps\DreamPicoPort-API\src\DppWinRtDeviceImp.cpp"
+  zip_hash.c
+  zip_name_locate.c
+  zip_get_num_files.c
+  zip_rename.c
+  DppWinRtDeviceImp.cpp
+  zip_new.c
+  SDL_hidapi_xbox360w.c
+  SDL_hidapi_xbox360.c
+  zip_progress.c
+  SDL_windows_gaming_input.c
+  zip_replace.c
+  SDL_rawinputjoystick.c
+  SDL_dinputjoystick.c
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(1224,17): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\core\deps\DreamPicoPort-API\src\dream_pico_port_api.vcxproj]
+  (compiling source file '../../../../../upstream/flycast/core/deps/DreamPicoPort-API/src/DppDeviceImp.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(1224,17):
+      the template instantiation context (the oldest one first) is
+          C:\Users\jpatt\deez-retro-work\upstream\flycast\core\deps\DreamPicoPort-API\src\DppDeviceImp.cpp(254,10):
+          see reference to function template instantiation 'std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>> std::vector<_Ty,std::allocator<_Ty>>::insert<const uint8_t*,0>(std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>,_Iter,_Iter)' being compiled
+          with
+          [
+              _Ty=uint8_t,
+              _Iter=const uint8_t *
+          ]
+              C:\Users\jpatt\deez-retro-work\upstream\flycast\core\deps\DreamPicoPort-API\src\DppDeviceImp.cpp(254,16):
+              see the first reference to 'std::vector<uint8_t,std::allocator<uint8_t>>::insert' in 'dpp_api::DppDeviceImp::pack'
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(1282,13):
+          see reference to function template instantiation 'void std::vector<uint8_t,std::allocator<uint8_t>>::_Insert_counted_range<_Iter>(std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>,_Iter,const unsigned __int64)' being compiled
+          with
+          [
+              _Iter=const uint8_t *,
+              _Ty=uint8_t
+          ]
+  
+  zip_set_archive_comment.c
+  zip_pkware.c
+  zip_source_accept_empty.c
+  zip_source_begin_write.c
+  zip_get_archive_comment.c
+  zip_source_close.c
+  zip_open.c
+  zip_set_file_comment.c
+  zip_set_archive_flag.c
+  zip_source_commit_write.c
+  zip_source_compress.c
+  zip_set_file_compression.c
+  zip_set_default_password.c
+  zip_source_buffer.c
+  zip_source_error.c
+  zip_source_file_common.c
+  zip_source_file_stdio.c
+  zip_source_crc.c
+  zip_source_is_deleted.c
+  zip_source_free.c
+  zip_source_get_file_attributes.c
+  zip_source_begin_write_cloning.c
+  zip_source_pass_to_lower_layer.c
+  zip_set_name.c
+  zip_source_function.c
+  zip_source_call.c
+  zip_source_open.c
+  zip_source_layered.c
+  zip_source_pkware_decode.c
+  zip_source_read.c
+  zip_source_pkware_encode.c
+  zip_source_remove.c
+  zip_source_tell_write.c
+  zip_source_rollback_write.c
+  zip_source_stat.c
+  zip_source_zip.c
+  zip_source_seek_write.c
+  zip_source_tell.c
+  zip_source_seek.c
+  zip_source_zip_new.c
+  zip_source_supports.c
+  zip_source_window.c
+  zip_source_write.c
+  zip_stat.c
+  zip_stat_index.c
+  zip_stat_init.c
+  zip_strerror.c
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(1224,17): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\core\deps\DreamPicoPort-API\src\dream_pico_port_api.vcxproj]
+  (compiling source file '../../../../../upstream/flycast/core/deps/DreamPicoPort-API/src/DreamPicoPortApi.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(1224,17):
+      the template instantiation context (the oldest one first) is
+          C:\Users\jpatt\deez-retro-work\upstream\flycast\core\deps\DreamPicoPort-API\src\DreamPicoPortApi.cpp(64,17):
+          see reference to function template instantiation 'std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>> std::vector<_Ty,std::allocator<_Ty>>::insert<uint8_t*,0>(std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>,_Iter,_Iter)' being compiled
+          with
+          [
+              _Ty=uint8_t,
+              _Iter=uint8_t *
+          ]
+              C:\Users\jpatt\deez-retro-work\upstream\flycast\core\deps\DreamPicoPort-API\src\DreamPicoPortApi.cpp(64,23):
+              see the first reference to 'std::vector<uint8_t,std::allocator<uint8_t>>::insert' in 'dpp_api::msg::tx::Maple32::get'
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(1282,13):
+          see reference to function template instantiation 'void std::vector<uint8_t,std::allocator<uint8_t>>::_Insert_counted_range<_Iter>(std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>,_Iter,const unsigned __int64)' being compiled
+          with
+          [
+              _Iter=uint8_t *,
+              _Ty=uint8_t
+          ]
+  
+  zip_unchange_data.c
+  zip_unchange.c
+  zip_unchange_archive.c
+  zip_unchange_all.c
+  zip_string.c
+  zip_source_file_win32_utf16.c
+  zip_source_file_win32_utf8.c
+  zip_source_file_win32.c
+  zip_source_file_win32_named.c
+  zip_err_str.c
+  zip_algorithm_zstd.c
+  zip_utf-8.c
+  zip_random_win32.c
+  zip_source_file_win32_ansi.c
+  dream_pico_port_api.vcxproj -> C:\Users\jpatt\deez-retro-work\build-win4\core\deps\DreamPicoPort-API\src\Release\dream_pico_port_api.lib
+  zip.vcxproj -> C:\Users\jpatt\deez-retro-work\build-win4\core\deps\libzip\lib\Release\zip.lib
+  chdr-static.vcxproj -> C:\Users\jpatt\deez-retro-work\build-win4\core\deps\libchdr\Release\chdr-static.lib
+  SDL2-static.vcxproj -> C:\Users\jpatt\deez-retro-work\build-win4\core\deps\SDL\Release\SDL2-static.lib
+  Building Custom Rule C:/Users/jpatt/deez-retro-work/upstream/flycast/CMakeLists.txt
+  emulator.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/emulator.cpp')
+  
+  sdl.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/sdl/sdl.cpp')
+  
+  sdl_gamepad.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/sdl/sdl_gamepad.cpp')
+  
+  dreamlink.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/sdl/dreamlink.cpp')
+  
+  dreampicoport.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/sdl/dreampicoport.cpp')
+  
+  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+  - add -D_WIN32_WINNT=0x0601 to the compiler command line; or
+  - add _WIN32_WINNT=0x0601 to your project's Preprocessor Definitions.
+  Assuming _WIN32_WINNT=0x0601 (i.e. Windows 7 target).
+  dreamconn.cpp
+  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+  - add -D_WIN32_WINNT=0x0601 to the compiler command line; or
+  - add _WIN32_WINNT=0x0601 to your project's Preprocessor Definitions.
+  Assuming _WIN32_WINNT=0x0601 (i.e. Windows 7 target).
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\deps\asio\asio\include\asio\impl\system_context.ipp(32,5): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/sdl/dreamconn.cpp')
+  
+  cdipsr.cpp
+  imgui.cpp
+  imgui_demo.cpp
+  imgui_draw.cpp
+  imgui_cjk.cpp
+  imgui_stdlib.cpp
+  imgui_tables.cpp
+  imgui_widgets.cpp
+  imgui_freetype.cpp
+  xbrz.cpp
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\deps\xbrz\xbrz.cpp(1,1): warning C4828: The file contains a character starting at offset 0x3fa1 that is illegal in the current source character set (codepage 65001). [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\deps\xbrz\xbrz.cpp(490,9): warning C5051: attribute [[likely]] requires at least '/std:c++20'; ignored [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\deps\xbrz\xbrz.cpp(696,17): warning C5051: attribute [[likely]] requires at least '/std:c++20'; ignored [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+      C:\Users\jpatt\deez-retro-work\upstream\flycast\core\deps\xbrz\xbrz.cpp(696,17):
+      the template instantiation context (the oldest one first) is
+          C:\Users\jpatt\deez-retro-work\upstream\flycast\core\deps\xbrz\xbrz.cpp(1175,28):
+          see reference to function template instantiation 'void `anonymous-namespace'::scaleImage<`anonymous-namespace'::Scaler2x<`anonymous-namespace'::ColorGradientRGB>,`anonymous-namespace'::ColorDistanceRGB,`anonymous-namespace'::OobReaderDuplicate>(const uint32_t *,uint32_t *,int,int,const xbrz::ScalerCfg &,int,int)' being compiled
+  
+  7zArchive.cpp
+  archive.cpp
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\archive\archive.cpp(31,2): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  rzip.cpp
+  ZipArchive.cpp
+  Generating Code...
+  Compiling...
+  cfg.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(401,13): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/cfg/cfg.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(401,13):
+      the template instantiation context (the oldest one first) is
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(678,75):
+          see reference to class template instantiation 'std::basic_ostream<char,std::char_traits<char>>' being compiled
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(394,39):
+          while compiling class template member function 'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(float)'
+              C:\Users\jpatt\deez-retro-work\upstream\flycast\core\cfg\ini.h(102,5):
+              see the first reference to 'std::basic_ostream<char,std::char_traits<char>>::operator <<' in 'config::IniFile::set'
+  
+  cl.cpp
+  ini.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(824,9): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/cfg/ini.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(824,9):
+      the template instantiation context (the oldest one first) is
+          C:\Users\jpatt\deez-retro-work\upstream\flycast\core\cfg\ini.cpp(265,8):
+          see reference to function template instantiation 'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,char)' being compiled
+  
+  option.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/cfg/option.cpp')
+  
+  aica.cpp
+  aica_if.cpp
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\hw\aica\aica_if.cpp(169,16): warning C4333: '>>': right shift by too large amount, data loss [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+      C:\Users\jpatt\deez-retro-work\upstream\flycast\core\hw\aica\aica_if.cpp(169,16):
+      the template instantiation context (the oldest one first) is
+          C:\Users\jpatt\deez-retro-work\upstream\flycast\core\hw\aica\aica_if.cpp(180,15):
+          see reference to function template instantiation 'void aica::writeAicaReg<u8>(u32,u8)' being compiled
+  
+  aica_mem.cpp
+  dsp.cpp
+  dsp_arm32.cpp
+  dsp_arm64.cpp
+  dsp_interp.cpp
+  dsp_x64.cpp
+  dsp_x86.cpp
+  sgc_if.cpp
+  arm7.cpp
+  arm_mem.cpp
+  arm7_rec_arm32.cpp
+  arm7_rec_arm64.cpp
+  arm7_rec_x64.cpp
+  arm7_rec.cpp
+  Generating Code...
+  Compiling...
+  bba.cpp
+  rtl8139c.cpp
+  at93cxx.cpp
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\hw\flashrom\at93cxx.h(71,21): warning C4805: '|=': unsafe mix of type 'u8' and type 'std::vector<bool,std::allocator<bool>>::const_reference' in operation [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/hw/flashrom/at93cxx.cpp')
+  
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\hw\flashrom\at93cxx.h(82,18): warning C4805: '|=': unsafe mix of type 'u16' and type 'std::vector<bool,std::allocator<bool>>::const_reference' in operation [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/hw/flashrom/at93cxx.cpp')
+  
+  flashrom.cpp
+  nvmem.cpp
+  x76f100.cpp
+  gdrom_response.cpp
+  gdromv3.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/hw/gdrom/gdromv3.cpp')
+  
+  holly_intc.cpp
+  sb.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/hw/holly/sb.cpp')
+  
+  sb_mem.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/hw/holly/sb_mem.cpp')
+  
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\hw\flashrom\at93cxx.h(71,21): warning C4805: '|=': unsafe mix of type 'u8' and type 'std::vector<bool,std::allocator<bool>>::const_reference' in operation [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/hw/holly/sb_mem.cpp')
+  
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\hw\flashrom\at93cxx.h(82,18): warning C4805: '|=': unsafe mix of type 'u16' and type 'std::vector<bool,std::allocator<bool>>::const_reference' in operation [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/hw/holly/sb_mem.cpp')
+  
+  maple_cfg.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/hw/maple/maple_cfg.cpp')
+  
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\hw\maple\maple_cfg.cpp(347,21): warning C4806: '|': unsafe operation: no value of type 'bool' promoted to type 'int' can equal the given constant [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  maple_devs.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/hw/maple/maple_devs.cpp')
+  
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\hw\maple\maple_devs.cpp(926,27): warning C4805: '|': unsafe mix of type 'int' and type 'bool' in operation [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\hw\maple\maple_devs.cpp(1800,31): warning C4333: '>>': right shift by too large amount, data loss [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\hw\maple\maple_devs.cpp(1801,31): warning C4333: '>>': right shift by too large amount, data loss [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\hw\maple\maple_devs.cpp(1815,31): warning C4333: '>>': right shift by too large amount, data loss [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\hw\maple\maple_devs.cpp(1816,31): warning C4333: '>>': right shift by too large amount, data loss [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\hw\maple\maple_devs.cpp(1828,31): warning C4333: '>>': right shift by too large amount, data loss [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\hw\maple\maple_devs.cpp(1829,31): warning C4333: '>>': right shift by too large amount, data loss [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\hw\maple\maple_devs.cpp(1842,31): warning C4333: '>>': right shift by too large amount, data loss [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\hw\maple\maple_devs.cpp(1843,31): warning C4333: '>>': right shift by too large amount, data loss [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  maple_helper.cpp
+  maple_if.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/hw/maple/maple_if.cpp')
+  
+  maple_jvs.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/hw/maple/maple_jvs.cpp')
+  
+  addrspace.cpp
+  mem_watch.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/hw/mem/mem_watch.cpp')
+  
+  modem.cpp
+  v42.cpp
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\hw\modem\v42.cpp(434,3): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  Generating Code...
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\hw\hwreg.h(49,1): warning C4715: 'HwRegister::read<unsigned int>': not all control paths return a value [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  Compiling...
+  v42bis.cpp
+  atomiswave.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/hw/naomi/atomiswave.cpp')
+  
+  awcartridge.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/hw/naomi/awcartridge.cpp')
+  
+  decrypt.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/hw/naomi/decrypt.cpp')
+  
+  dinokich.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/hw/naomi/dinokich.cpp')
+  
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\hw\flashrom\at93cxx.h(71,21): warning C4805: '|=': unsafe mix of type 'u8' and type 'std::vector<bool,std::allocator<bool>>::const_reference' in operation [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/hw/naomi/dinokich.cpp')
+  
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\hw\flashrom\at93cxx.h(82,18): warning C4805: '|=': unsafe mix of type 'u16' and type 'std::vector<bool,std::allocator<bool>>::const_reference' in operation [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/hw/naomi/dinokich.cpp')
+  
+  dinokich_card.cpp
+  gdcartridge.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/hw/naomi/gdcartridge.cpp')
+  
+  m1cartridge.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/hw/naomi/m1cartridge.cpp')
+  
+  m4cartridge.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/hw/naomi/m4cartridge.cpp')
+  
+  midiffb.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/hw/naomi/midiffb.cpp')
+  
+  multiboard.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/hw/naomi/multiboard.cpp')
+  
+  naomi_cart.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/hw/naomi/naomi_cart.cpp')
+  
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\hw\flashrom\at93cxx.h(71,21): warning C4805: '|=': unsafe mix of type 'u8' and type 'std::vector<bool,std::allocator<bool>>::const_reference' in operation [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/hw/naomi/naomi_cart.cpp')
+  
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\hw\flashrom\at93cxx.h(82,18): warning C4805: '|=': unsafe mix of type 'u16' and type 'std::vector<bool,std::allocator<bool>>::const_reference' in operation [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/hw/naomi/naomi_cart.cpp')
+  
+  naomi_flashrom.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/hw/naomi/naomi_flashrom.cpp')
+  
+  naomi_m3comm.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/hw/naomi/naomi_m3comm.cpp')
+  
+  naomi.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/hw/naomi/naomi.cpp')
+  
+  naomi_roms.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/hw/naomi/naomi_roms.cpp')
+  
+  netdimm.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/hw/naomi/netdimm.cpp')
+  
+  card_reader.cpp
+  touchscreen.cpp
+  printer.cpp
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\hw\naomi\printer.cpp(395,5): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  Generating Code...
+  Compiling...
+  systemsp.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/hw/naomi/systemsp.cpp')
+  
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\hw\flashrom\at93cxx.h(71,21): warning C4805: '|=': unsafe mix of type 'u8' and type 'std::vector<bool,std::allocator<bool>>::const_reference' in operation [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/hw/naomi/systemsp.cpp')
+  
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\hw\flashrom\at93cxx.h(82,18): warning C4805: '|=': unsafe mix of type 'u16' and type 'std::vector<bool,std::allocator<bool>>::const_reference' in operation [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/hw/naomi/systemsp.cpp')
+  
+  hopper.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/hw/naomi/hopper.cpp')
+  
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\hw\naomi\hopper.cpp(382,41): warning C4805: '|': unsafe mix of type 'bool' and type 'int' in operation [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\hw\naomi\hopper.cpp(383,53): warning C4805: '|': unsafe mix of type 'bool' and type 'int' in operation [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\hw\naomi\hopper.cpp(557,41): warning C4805: '|': unsafe mix of type 'bool' and type 'int' in operation [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\hw\naomi\hopper.cpp(558,53): warning C4805: '|': unsafe mix of type 'bool' and type 'int' in operation [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\hw\naomi\hopper.cpp(898,41): warning C4805: '|': unsafe mix of type 'bool' and type 'int' in operation [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\hw\naomi\hopper.cpp(899,53): warning C4805: '|': unsafe mix of type 'bool' and type 'int' in operation [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\hw\naomi\hopper.cpp(1096,41): warning C4805: '|': unsafe mix of type 'bool' and type 'int' in operation [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\hw\naomi\hopper.cpp(1097,53): warning C4805: '|': unsafe mix of type 'bool' and type 'int' in operation [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  elan.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/hw/pvr/elan.cpp')
+  
+  pvr.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/hw/pvr/pvr.cpp')
+  
+  pvr_mem.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/hw/pvr/pvr_mem.cpp')
+  
+  pvr_regs.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/hw/pvr/pvr_regs.cpp')
+  
+  pvr_sb_regs.cpp
+  Renderer_if.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/hw/pvr/Renderer_if.cpp')
+  
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\hw\pvr\Renderer_if.cpp(458,2): error C2059: syntax error: '}' [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  spg.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/hw/pvr/spg.cpp')
+  
+  ta.cpp
+  ta_ctx.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/hw/pvr/ta_ctx.cpp')
+  
+  ta_util.cpp
+  ta_vtx.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/hw/pvr/ta_vtx.cpp')
+  
+  blockmanager.cpp
+  decoder.cpp
+  driver.cpp
+  shil.cpp
+  ssa.cpp
+  sh4_fpu.cpp
+  sh4_interpreter.cpp
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\hw\sh4\interpr\sh4_interpreter.cpp(46,2): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  Generating Code...
+  Compiling...
+  sh4_opcodes.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/hw/sh4/interpr/sh4_opcodes.cpp')
+  
+  bsc.cpp
+  ccn.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/hw/sh4/modules/ccn.cpp')
+  
+  cpg.cpp
+  dmac.cpp
+  fastmmu.cpp
+  intc.cpp
+  mmu.cpp
+  rtc.cpp
+  serial.cpp
+  tmu.cpp
+  ubc.cpp
+  sh4_cycles.cpp
+  sh4_core_regs.cpp
+  sh4_interrupts.cpp
+  sh4_mem.cpp
+  sh4_mmr.cpp
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\hw\sh4\sh4_mmr.cpp(292,31): warning C4333: '>>': right shift by too large amount, data loss [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+      C:\Users\jpatt\deez-retro-work\upstream\flycast\core\hw\sh4\sh4_mmr.cpp(292,31):
+      the template instantiation context (the oldest one first) is
+          C:\Users\jpatt\deez-retro-work\upstream\flycast\core\hw\sh4\sh4_mmr.cpp(654,40):
+          see reference to function template instantiation 'void WriteMem_P4<u8>(u32,T)' being compiled
+          with
+          [
+              T=u8
+          ]
+  
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\hw\sh4\sh4_mmr.cpp(352,31): warning C4333: '>>': right shift by too large amount, data loss [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\hw\sh4\sh4_mmr.cpp(353,31): warning C4333: '>>': right shift by too large amount, data loss [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  sh4_opcode_list.cpp
+  sh4_rom.cpp
+  sh4_sched.cpp
+  Generating Code...
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\hw\hwreg.h(49,1): warning C4715: 'HwRegister::read<unsigned char>': not all control paths return a value [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\hw\hwreg.h(49,1): warning C4715: 'HwRegister::read<unsigned short>': not all control paths return a value [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\hw\hwreg.h(49,1): warning C4715: 'HwRegister::read<unsigned int>': not all control paths return a value [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  Compiling...
+  storeq.cpp
+  cdi.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/imgread/cdi.cpp')
+  
+  cdio.cpp
+  chd.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/imgread/chd.cpp')
+  
+  common.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/imgread/common.cpp')
+  
+  cue.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/imgread/cue.cpp')
+  
+  gdi.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/imgread/gdi.cpp')
+  
+  ImgReader.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/imgread/ImgReader.cpp')
+  
+  isofs.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/imgread/isofs.cpp')
+  
+  dreampotato.cpp
+  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+  - add -D_WIN32_WINNT=0x0601 to the compiler command line; or
+  - add _WIN32_WINNT=0x0601 to your project's Preprocessor Definitions.
+  Assuming _WIN32_WINNT=0x0601 (i.e. Windows 7 target).
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\deps\asio\asio\include\asio\impl\system_context.ipp(32,5): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/input/dreampotato.cpp')
+  
+  maplelink.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/input/maplelink.cpp')
+  
+  gamepad_device.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/input/gamepad_device.cpp')
+  
+  mapping.cpp
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\input\mapping.cpp(210,3): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  mouse.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/input/mouse.cpp')
+  
+  ConsoleListenerDroid.cpp
+  ConsoleListenerNix.cpp
+  ConsoleListenerWin.cpp
+  LogManager.cpp
+  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+  - add -D_WIN32_WINNT=0x0601 to the compiler command line; or
+  - add _WIN32_WINNT=0x0601 to your project's Preprocessor Definitions.
+  Assuming _WIN32_WINNT=0x0601 (i.e. Windows 7 target).
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\deps\asio\asio\include\asio\impl\system_context.ipp(32,5): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/log/LogManager.cpp')
+  
+  alienfnt_modem.cpp
+  dns.cpp
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\deps\picotcp\include\pico_stack.h(8,10): warning C4103: alignment changed after including header, may be due to missing #pragma pack(pop) [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/network/dns.cpp')
+  
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\network\dns.cpp(29,10): warning C4103: alignment changed after including header, may be due to missing #pragma pack(pop) [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  Generating Code...
+  Compiling...
+  ggpo.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/network/ggpo.cpp')
+  
+  miniupnp.cpp
+  naomi_network.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/network/naomi_network.cpp')
+  
+  net_handshake.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/network/net_handshake.cpp')
+  
+  output.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/network/output.cpp')
+  
+  picoppp.cpp
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\deps\picotcp\include\pico_stack.h(8,10): warning C4103: alignment changed after including header, may be due to missing #pragma pack(pop) [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/network/picoppp.cpp')
+  
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\network\picoppp.cpp(33,10): warning C4103: alignment changed after including header, may be due to missing #pragma pack(pop) [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\deps\asio\asio\include\asio\impl\system_context.ipp(32,5): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/network/picoppp.cpp')
+  
+  netservice.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/network/netservice.cpp')
+  
+  dcnet.cpp
+  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+  - add -D_WIN32_WINNT=0x0601 to the compiler command line; or
+  - add _WIN32_WINNT=0x0601 to your project's Preprocessor Definitions.
+  Assuming _WIN32_WINNT=0x0601 (i.e. Windows 7 target).
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\deps\asio\asio\include\asio\impl\system_context.ipp(32,5): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/network/dcnet.cpp')
+  
+  ice.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/network/ice.cpp')
+  
+  directory.cpp
+  i18n.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/oslib/i18n.cpp')
+  
+  resources.cpp
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\oslib\resources.cpp(30,2): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  storage.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(1224,17): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/oslib/storage.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(1224,17):
+      the template instantiation context (the oldest one first) is
+          C:\Users\jpatt\deez-retro-work\upstream\flycast\core\oslib\storage.cpp(353,11):
+          see reference to function template instantiation 'std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>> std::vector<_Ty,std::allocator<_Ty>>::insert<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>,0>(std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>,_Iter,_Iter)' being compiled
+          with
+          [
+              _Ty=hostfs::FileInfo,
+              _Iter=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<hostfs::FileInfo>>>
+          ]
+              C:\Users\jpatt\deez-retro-work\upstream\flycast\core\oslib\storage.cpp(353,17):
+              see the first reference to 'std::vector<hostfs::FileInfo,std::allocator<hostfs::FileInfo>>::insert' in 'hostfs::AllStorage::listContent'
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(1282,13):
+          see reference to function template instantiation 'void std::vector<hostfs::FileInfo,std::allocator<hostfs::FileInfo>>::_Insert_counted_range<hostfs::FileInfo*>(std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>,_Iter,const unsigned __int64)' being compiled
+          with
+          [
+              _Ty=hostfs::FileInfo,
+              _Iter=hostfs::FileInfo *
+          ]
+  
+  http_client.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(824,9): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/oslib/http_client.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(824,9):
+      the template instantiation context (the oldest one first) is
+          C:\Users\jpatt\deez-retro-work\upstream\flycast\core\oslib\http_client.h(73,12):
+          see reference to function template instantiation 'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,char)' being compiled
+  
+  oslib.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/oslib/oslib.cpp')
+  
+  audiobackend_alsa.cpp
+  audiobackend_coreaudio.cpp
+  audiobackend_directsound.cpp
+  audiobackend_libao.cpp
+  audiobackend_null.cpp
+  Generating Code...
+  Compiling...
+  audiobackend_oboe.cpp
+  audiobackend_omx.cpp
+  audiobackend_oss.cpp
+  audiobackend_pulseaudio.cpp
+  audiobackend_sdl2.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math_defines.h(28,9): warning C4005: 'M_PI': macro redefinition [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/audio/audiobackend_sdl2.cpp')
+      C:\Users\jpatt\deez-retro-work\build-win4\core\deps\SDL\include\SDL2\SDL_stdinc.h(658,9):
+      see previous definition of 'M_PI'
+  
+  audiostream.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/audio/audiostream.cpp')
+  
+  descrambl.cpp
+  gdrom_hle.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/reios/gdrom_hle.cpp')
+  
+  reios.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/reios/reios.cpp')
+  
+  reios_elf.cpp
+  achievements.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/achievements/achievements.cpp')
+  
+  game_scanner.cpp
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\ui\game_scanner.cpp(141,5): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  gui.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/ui/gui.cpp')
+  
+  gui_font.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/ui/gui_font.cpp')
+  
+  gui_achievements.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/ui/gui_achievements.cpp')
+  
+  vgamepad.cpp
+  gui_cheats.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/ui/gui_cheats.cpp')
+  
+  gui_util.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/ui/gui_util.cpp')
+  
+  mainui.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/ui/mainui.cpp')
+  
+  settings.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/ui/settings.cpp')
+  
+  Generating Code...
+  Compiling...
+  settings_about.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/ui/settings_about.cpp')
+  
+  settings_audio.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/ui/settings_audio.cpp')
+  
+  settings_controls.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/ui/settings_controls.cpp')
+  
+  settings_general.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/ui/settings_general.cpp')
+  
+  settings_network.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/ui/settings_network.cpp')
+  
+  settings_video.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/ui/settings_video.cpp')
+  
+  boxart.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/ui/boxart/boxart.cpp')
+  
+  gamesdb.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/ui/boxart/gamesdb.cpp')
+  
+  scraper.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/ui/boxart/scraper.cpp')
+  
+  lua.cpp
+  context.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/wsi/context.cpp')
+  
+  switcher.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/wsi/switcher.cpp')
+  
+  fault_handler.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/windows/fault_handler.cpp')
+  
+  unwind_info.cpp
+  win_vmem.cpp
+  evdev.cpp
+  x11.cpp
+  cheats.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/cheats.cpp')
+  
+  nullDC.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/nullDC.cpp')
+  
+  serialize.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/serialize.cpp')
+  
+  Generating Code...
+  Compiling...
+  stdclass.cpp
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\stdclass.cpp(116,2): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  CustomTexture.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/rend/CustomTexture.cpp')
+  
+  osd.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/rend/osd.cpp')
+  
+  sorter.cpp
+  TexCache.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/rend/TexCache.cpp')
+  
+  texconv.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/rend/texconv.cpp')
+  
+  transform_matrix.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/rend/transform_matrix.cpp')
+  
+  norend.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/rend/norend/norend.cpp')
+  
+  rec_x64.cpp
+  bitvector.cpp
+  game_input.cpp
+  input_queue.cpp
+  main.cpp
+C:\Users\jpatt\deez-retro-work\upstream\flycast\core\deps\ggpo\lib\ggpo\main.cpp(36,2): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  platform_linux.cpp
+  platform_windows.cpp
+  poll.cpp
+  sync.cpp
+  timesync.cpp
+  p2p.cpp
+  spectator.cpp
+  Generating Code...
+  Compiling...
+  synctest.cpp
+  udp_proto.cpp
+  udp.cpp
+  rawinput.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/windows/rawinput.cpp')
+  
+  winmain.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ppltasks.h(1580,21): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc [C:\Users\jpatt\deez-retro-work\build-win4\flycast.vcxproj]
+  (compiling source file '../upstream/flycast/core/windows/winmain.cpp')
+  
+  Generating Code...

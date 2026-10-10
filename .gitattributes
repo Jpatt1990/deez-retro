@@ -1,0 +1,50 @@
+# Line-ending policy.
+#
+# This project is authored on Windows and built on macOS/Linux. Without this
+# file, `core.autocrlf=true` (the Windows default, and set on the authoring
+# machine) lets CRLF leak into files that macOS cannot tolerate:
+#
+#   * an .sh with CRLF fails with `bad interpreter: /bin/bash^M`
+#   * a .patch with CRLF fails `git apply` against an LF checkout, because the
+#     context lines carry a trailing CR that the target file does not have
+#
+# Repository blobs are therefore LF for everything textual, explicitly.
+* text=auto eol=lf
+
+# Shell scripts are executed on macOS/Linux runners. LF is mandatory.
+*.sh            text eol=lf
+*.bash          text eol=lf
+
+# Patch files are consumed by `git apply` on macOS. LF is mandatory.
+*.patch         text eol=lf
+*.diff          text eol=lf
+
+# YAML is parsed by GitHub Actions. LF avoids surprises.
+*.yml           text eol=lf
+*.yaml          text eol=lf
+
+# Sources and docs.
+*.md            text eol=lf
+*.swift         text eol=lf
+*.h             text eol=lf
+*.hpp           text eol=lf
+*.m             text eol=lf
+*.mm            text eol=lf
+*.c             text eol=lf
+*.cc            text eol=lf
+*.cpp           text eol=lf
+*.plist         text eol=lf
+*.json          text eol=lf
+*.txt           text eol=lf
+.gitignore      text eol=lf
+
+# Binary. Never transform.
+*.png           binary
+*.jpg           binary
+*.jpeg          binary
+*.gif           binary
+*.zip           binary
+*.a             binary
+*.lib           binary
+*.dylib         binary
+*.xcframework   binary
