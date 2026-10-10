@@ -355,6 +355,9 @@ jobs:
         run: |
           set -o pipefail
           mkdir -p build
+          # $(inherited) is Xcode build-setting syntax, not shell syntax, so the
+          # value is deliberately single-quoted to stop the shell expanding it.
+          # shellcheck disable=SC2016
           xcodebuild \
             -project DeezRetro.xcodeproj \
             -scheme DeezRetro \
